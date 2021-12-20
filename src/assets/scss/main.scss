@@ -1,10 +1,37 @@
-@import 'fonts-include/montserrat';
+
+@import 'fonts-include/_montserrat.scss';
+
+@import 'units/header/_header.scss';
+@import 'units/header/_mmenu.scss';
+@import 'units/header/_hamburger.scss';
+@import 'units/header/_mob-menu.scss';
+
+
+
+@import 'units/footer/_footer.scss';
+
 
 *{
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
 }
+html{
+	font-size: 16px;
+	font-family: $font-family;
+	height: 100%;
+	min-height: 100vh;
+}
+
+body{
+	width: 100%;
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	background-color: #FCFDFD;
+}
+
+
 
 a{
 	text-decoration: none;
@@ -12,7 +39,7 @@ a{
 }
 
 button{
-	font-family: inherit;
+	font-family: $font-family;
 	border: none;
 	background: transparent;
 	outline: none;
@@ -27,4 +54,61 @@ input{
 
 address{
 	font-style: normal;
+}
+
+ul{
+	list-style: none;
+}
+
+.section{
+	width: 100%;
+	display: flex;
+	justify-content: center;
+
+	padding: 0 60px;
+
+	@media (max-width: 1366px){
+		padding: 0 40px;
+	}
+	@media (max-width: 1024px){
+		padding: 0 25px;
+	}
+	@media (max-width: 768px){
+		padding: 0 20px;
+	}
+}
+
+.section__inner{
+	width: 100%;
+	max-width: 1300px;
+}
+
+
+.green-btn{
+	padding: 1rem 2rem;
+	background: #159BBA;
+	border-radius: 4px;	
+	font-style: normal;
+	font-weight: 600;
+	font-size: 1.125rem;
+	line-height: 125%;
+	color: #F6F8F9;
+
+	transition: 300ms;
+	cursor: pointer;
+
+
+
+	&:hover{
+		background-color: #0B7D98;
+	}
+
+
+	@media (max-width: 1024px){
+		font-size: 1rem;
+	}
+}
+
+main{
+	flex-grow: 1;
 }

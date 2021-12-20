@@ -39,6 +39,7 @@ const autoprefixer = require('gulp-autoprefixer');
 //const minify = require('gulp-minify');
 const rename = require('gulp-rename');
 const minifycss = require('gulp-minify-css');
+const fileinclude = require('gulp-file-include');
 
 
 function browser_sync(){
@@ -49,6 +50,7 @@ function browser_sync(){
 
 function html(){
     return src(path.src.html)
+        .pipe(fileinclude())
         .pipe(dest(path.build.html))
         .pipe(b_sync.stream())
 }

@@ -1,0 +1,25 @@
+.footer{
+    background: #29292C;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 68px;
+}
+
+.footer__inner{
+    width: 100%;
+    max-width: 1300px;
+    
+    
+}
+
+.footer__copyright{
+    width: 100%;
+    text-align: center;
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 125%;
+    color: #6D6D71;
+    padding: 1rem 0;
+}
