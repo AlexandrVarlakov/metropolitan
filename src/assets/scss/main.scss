@@ -13,6 +13,9 @@
 
 @import 'units/reviews/_reviews.scss';
 
+@import 'units/news/_news.scss';
+
+
 
 @import 'units/pagination/_pagination.scss';
 
@@ -262,3 +265,42 @@ main{
 	border: 1px dashed silver;
 }
 
+.text{
+	font-size: .875rem;
+	line-height: 120%;
+	color: #515154;
+
+	@media (max-width: 1024px){
+		font-size: .8125rem;
+	}
+}
+
+.card-title{
+	font-style: normal;
+	font-weight: bold;
+	font-size: 1.5rem;
+	line-height: 125%;
+	color: #515154;
+
+	@media (max-width: 1024px){
+		font-size: 1.3125rem;
+	}
+}
+
+.green-link{
+	font-style: normal;
+	font-weight: bold;
+	font-size: .875rem;
+	line-height: 120%;
+	text-decoration-line: underline;
+	color: #0B7D98;
+	transition: 300ms;
+	@media (max-width: 1024px){
+		font-size: .8125rem;
+	}
+
+
+	&:hover{
+		color: #159BBA;
+	}
+}

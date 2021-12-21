@@ -1417,6 +1417,150 @@
       font-size: .8125rem;
       margin-top: 10px; } }
 
+.cat-news {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 300;
+  font-size: .75rem;
+  line-height: 120%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: block;
+  color: #6D6D71;
+  cursor: pointer;
+  padding: 8px;
+  width: 110px;
+  max-width: 100%;
+  margin: 0;
+  border: 1px solid #E9E9E9;
+  border-radius: 4px;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+  background-color: #fff;
+  background-image: url("../img/icons/select-arrow.svg");
+  background-repeat: no-repeat, repeat;
+  background-position: right .7em top 50%, 0 0;
+  background-size: .65em auto, 100%;
+  -webkit-transition: 300ms;
+  -o-transition: 300ms;
+  transition: 300ms;
+  outline: none; }
+  .cat-news:hover {
+    border-color: #6D6D71; }
+  .cat-news option {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 300;
+    font-size: .75rem;
+    line-height: 120%;
+    cursor: pointer;
+    padding: 8px; }
+
+.car-news-label {
+  font-size: .875rem;
+  line-height: 120%;
+  color: #515154;
+  margin-right: 12px; }
+  @media (max-width: 1024px) {
+    .car-news-label {
+      font-size: .8125rem; } }
+
+.news-categories-block {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 20px 0 40px; }
+  @media (max-width: 1024px) {
+    .news-categories-block {
+      margin: 20px 0 25px; } }
+
+.news-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+  margin-bottom: 32px; }
+  @media (max-width: 992px) {
+    .news-grid {
+      grid-template-columns: repeat(2, 1fr);
+      margin-bottom: 50px; } }
+  @media (max-width: 560px) {
+    .news-grid {
+      grid-template-columns: repeat(1, 1fr); } }
+
+.news-item {
+  border: 1px solid #F6F8F9;
+  border-radius: 8px; }
+
+.news-item__img-outer-block {
+  padding-bottom: 56.3%;
+  position: relative;
+  border-radius: 8px 8px 0 0;
+  overflow: hidden;
+  left: -1px;
+  top: -1px;
+  width: calc(100% + 2px); }
+
+.news-item__img-inner-block {
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  position: absolute; }
+  .news-item__img-inner-block img {
+    position: absolute;
+    width: 100%;
+    max-width: 100%;
+    height: 100%;
+    max-height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: center;
+       object-position: center; }
+
+.news-item__info {
+  padding: 12px;
+  background-color: rgba(246, 248, 249, 0.9);
+  left: 0;
+  right: 0;
+  bottom: 0;
+  position: absolute;
+  z-index: 5;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+  .news-item__info span {
+    font-size: .75rem;
+    line-height: 125%;
+    color: #515154; }
+
+.news-item__info--cat {
+  font-size: .75rem;
+  line-height: 125%;
+  color: #515154;
+  margin-right: 5px; }
+  .news-item__info--cat a {
+    color: #29292C;
+    font-weight: 500; }
+
+.news-item__text-block {
+  padding: 10px 12px 24px; }
+  .news-item__text-block .text {
+    margin: 8px 0 16px; }
+  @media (max-width: 1024px) {
+    .news-item__text-block {
+      padding: 5px 12px 12px; } }
+
 .pagination {
   display: -webkit-box;
   display: -webkit-flex;
@@ -1720,3 +1864,38 @@ main {
 
 .no_photo {
   border: 1px dashed silver; }
+
+.text {
+  font-size: .875rem;
+  line-height: 120%;
+  color: #515154; }
+  @media (max-width: 1024px) {
+    .text {
+      font-size: .8125rem; } }
+
+.card-title {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 1.5rem;
+  line-height: 125%;
+  color: #515154; }
+  @media (max-width: 1024px) {
+    .card-title {
+      font-size: 1.3125rem; } }
+
+.green-link {
+  font-style: normal;
+  font-weight: bold;
+  font-size: .875rem;
+  line-height: 120%;
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+  color: #0B7D98;
+  -webkit-transition: 300ms;
+  -o-transition: 300ms;
+  transition: 300ms; }
+  @media (max-width: 1024px) {
+    .green-link {
+      font-size: .8125rem; } }
+  .green-link:hover {
+    color: #159BBA; }
