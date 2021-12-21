@@ -1,0 +1,28 @@
+.breadcrumbs{    
+    color: #515154;
+    a{
+        font-style: normal;
+        font-weight: normal;
+        font-size: .875rem;
+        line-height: 150%;
+        color: #515154;
+        margin: 0 2px;
+        text-decoration: underline;
+        transition: 300ms;
+        &:first-of-type{
+            margin-left: 0;
+        }
+        @media (max-width: 1024px){
+            font-size: .8125rem;
+        }
+
+
+
+       &:hover{
+        color: #159BBA;
+       }
+    }
+    a.active{
+        color: #159BBA;
+    }
+}

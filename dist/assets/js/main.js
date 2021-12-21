@@ -23,7 +23,7 @@ hamburger.addEventListener('click', function(){
 
         mobnav.setAttribute('data-state', '1');
         
-        mobnav.style.bottom = footerHeight + 'px';
+        mobnav.style.bottom = 0 + 'px';
         
 
 
