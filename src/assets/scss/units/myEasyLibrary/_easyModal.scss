@@ -1,0 +1,23 @@
+@import '_easyAnimation.scss';
+
+.modal-fog{
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    
+    z-index: 999;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    
+    background: rgba(41, 41, 44, 0.4);
+    backdrop-filter: blur(8px);
+    
+}
+
+.hide-scroll{
+    overflow: hidden;
+}
+

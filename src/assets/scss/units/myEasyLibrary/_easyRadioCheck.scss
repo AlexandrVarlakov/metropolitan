@@ -1,0 +1,196 @@
+/*Checkbox- vars:*/
+$checkboxsizes: 20px;
+$checkbox-border-color: #666;
+$chekbox-round-sizes: 12px;
+$checkbox-round-color: #18bd41;
+$checkbox-square-sizes: 10px;
+$checkbox-img-sizes: 16px;
+$checkbox-img-mark: url('../img/MyEasyLibrary/easyRadioCheck/checkbox-arrow.svg');
+$checkbox-fs: 16px;
+$checkbox-color: #222;
+$checkbox-ml: 5px;
+$checkbox-opacity: .5;    
+$checkbox-transition: 200ms;
+
+/*Radio - vars:*/
+$radiosizes: 20px;
+$radio-border-color: #666;
+$radio-round-sizes: 12px;
+$radio-round-color: #18bd41;
+$radio-img-sizes: 12px;
+$radio-img-mark: url('../img/MyEasyLibrary/easyRadioCheck/checkbox-arrow.svg');
+$radio-fs: 16px;
+$radio-color: #222;
+$radio-ml: 5px;
+$radio-opacity: .5;    
+$radio-transition: 200ms;
+
+/***************easyCheckbox*********************/
+
+.easyCheckbox{
+    display: flex;
+    cursor: pointer;
+}
+
+.easyCheckbox__hidden-checkbox{
+    width: 0;
+    height: 0;
+    max-width: 0;
+    max-height: 0;
+    border: none;
+    opacity: 0;
+}
+
+.easyCheckbox__visible-checkbox{
+    display: block;
+    width: $checkboxsizes;
+    height: $checkboxsizes;
+    min-width: $checkboxsizes;
+    min-height: $checkboxsizes;
+    border: 2px solid rgba($color: $checkbox-border-color, $alpha: .5);
+    transition: $checkbox-transition;
+    border-radius: 3px;
+    position: relative;
+}
+
+.easyCheckbox__round, .easyCheckbox__square, .easyCheckbox__img{
+    
+    &::after{
+        content: "";
+        position: absolute;
+        width: $chekbox-round-sizes;
+        height: $chekbox-round-sizes;
+        background-color: $checkbox-round-color;
+        border-radius: 50%;
+        left: 50%;
+        top: 50%;
+        transform: translateX(-50%) translateY(-50%);
+        
+        opacity: 0;
+        transition: $checkbox-transition;
+    }
+}
+
+.easyCheckbox__square{
+    &::after{
+        width: $checkbox-square-sizes;
+        height: $checkbox-square-sizes;
+        border-radius: 3px;
+    }
+}
+
+
+.easyCheckbox__img{
+    &::after{
+        width: $checkbox-img-sizes;
+        height: $checkbox-img-sizes;
+        background: none;
+        background-image: $checkbox-img-mark;
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+    }
+}
+
+
+
+.easyCheckbox__text{
+    font-size: $checkbox-fs;
+    color: $checkbox-color;
+    margin-left: $checkbox-ml;
+    opacity: $checkbox-opacity;
+    transition: $checkbox-transition;
+}
+
+.easyCheckbox__hidden-checkbox:checked + .easyCheckbox__visible-checkbox + .easyCheckbox__text{
+    opacity: 1;
+}
+
+.easyCheckbox__hidden-checkbox:checked + .easyCheckbox__visible-checkbox{
+    border: 2px solid rgba($color: $checkbox-border-color, $alpha: 1);
+}
+/***************END: easyCheckbox****************/
+
+
+/***************easyRadio*********************/
+.easyRadio{
+    display: flex;
+    cursor: pointer;
+}
+
+.easyRadio__hidden-radio{
+    width: 0;
+    height: 0;
+    max-width: 0;
+    max-height: 0;
+    border: none;
+    opacity: 0;
+}
+
+.easyRadio__visible-radio{
+    display: block;
+    width: $radiosizes;
+    height: $radiosizes;
+    min-width: $radiosizes;
+    min-height: $radiosizes;
+    border: 2px solid rgba($color: $radio-border-color, $alpha: .5);
+    transition: $radio-transition;
+    border-radius: 50%;
+    position: relative;
+}
+
+.easyRadio__round, .easyRadio__img{
+    &::after{
+        content: "";
+        position: absolute;
+        width: $chekbox-round-sizes;
+        height: $chekbox-round-sizes;
+        background-color: $radio-round-color;
+        border-radius: 50%;
+        left: 50%;
+        top: 50%;
+        transform: translateX(-50%) translateY(-50%);  
+        opacity: 0;
+        transition: $radio-transition;
+    }
+}
+
+.easyRadio__hidden-radio:checked + .easyRadio__visible-radio{
+    &::after{
+        opacity: 1;
+    }
+}
+
+.easyRadio__img{
+    &::after{
+        width: $radio-img-sizes;
+        height: $radio-img-sizes;
+        background: none;
+        background-image: $radio-img-mark;
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+    }
+}
+
+.easyRadio__text{
+    font-size: $radio-fs;
+    color: $radio-color;
+    margin-left: $radio-ml;
+    opacity: $radio-opacity;
+    transition: $radio-transition;
+}
+
+.easyRadio__hidden-radio:checked + .easyRadio__visible-radio + .easyRadio__text{
+    opacity: 1;
+}
+
+.easyCheckbox__hidden-checkbox:checked + .easyCheckbox__visible-checkbox{
+
+    &::after{
+        opacity: 1;
+    }
+}
+
+.easyRadio__hidden-radio:checked + .easyRadio__visible-radio{
+    border: 2px solid rgba($color: $radio-border-color, $alpha: 1);
+}
+/***************END: easyRadio****************/

@@ -5,7 +5,53 @@
     </div>
 </footer>
 
+<!--
 
+ js получает action="send-mail.php" и отправляет ajax на скрипт указанный в action
+
+
+-->
+
+<div class="modal-form">
+    <h3 class="feedback-form-title">Оставьте заявку и мы с вами свяжемся</h3>
+    <div class="form-container">
+        <form class="easyGridForm easyForm" action="send-mail.php">
+
+
+            <div class="easyGridForm__line">
+                <div class="input-outer-wrap name-outer-wrap">
+
+                    <div class="input-wrap name-input-wrap">
+                        <input type="text" name="name" id="name" placeholder="Ваше имя" class="input-text easyForm__input" required="required">
+                    </div>
+                    <p class="err-msg">Текст ошибки</p>
+                </div>
+                <div class="input-outer-wrap phone-outer-wrap">
+    
+                    <div class="input-wrap phone-input-wrap">
+                        <input type="text" name="phone" id="phone" placeholder="+375 (   ) ... - .. - .." class="input-text easyForm__input" required="required" data-type="phone">
+                    </div>
+                    <p class="err-msg">Текст ошибки</p>
+                </div>
+            </div>
+
+            
+            
+            <div class="btn-wrap full-length">
+                <button class="form-btn-send green-btn" >Оставить заявку</button>
+            </div>
+        </form>
+
+    </div>
+
+    <div class="feed-success">
+        <h3 class="feedback-form-title">Ваша заявка принята</h3>
+    </div>
+</div>
+
+<script src="assets/js/easyModal.js"></script>
+<script src="assets/js/easyForm.js"></script>
+<script src="assets/js/maskPhone.js"></script>
 <script src="assets/js/main.js"></script>
     
 </body>

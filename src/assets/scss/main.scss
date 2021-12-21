@@ -7,6 +7,9 @@
 @import 'units/header/_mob-menu.scss';
 
 
+@import 'units/myEasyLibrary/_easyModal.scss';
+@import 'units/myEasyLibrary/_easyForm.scss';
+
 
 @import 'units/footer/_footer.scss';
 
@@ -111,4 +114,73 @@ ul{
 
 main{
 	flex-grow: 1;
+}
+
+.modal-form{
+	width: 100%;
+	max-width: 490px;
+	
+	display: none;
+	background: #F6F8F9;
+	border-radius: 8px;
+
+	padding: 36px 24px;
+
+
+	overflow: hidden;
+	position: relative;
+
+	@media (max-width: 768px){
+		padding: 24px 13px;
+		max-width: 320px;
+	}
+
+	@media (max-width: 340px){
+		max-width: 300px;
+	}
+}
+
+.feedback-form-title{
+	margin-bottom: 24px;	
+	font-style: normal;
+	font-weight: bold;
+	font-size: 2.25rem;
+	line-height: 125%;
+
+	/* or 45px */
+	text-align: center;
+
+	/* Black100 */
+	color: #29292C;
+
+
+	@media (max-width: 768px){
+		font-size: 1.5rem;
+	}
+}
+
+
+.feed-success{
+	position: absolute;
+	display: none;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background-color: #F6F8F9;
+	transform: translateY(150%);
+	justify-content: center;
+	align-items: center;
+	animation: show-feed-success 300ms forwards;
+}
+
+
+@keyframes show-feed-success{
+	from{
+		transform: translateY(150%);
+	}
+	to{
+		transform: translateY(0%);
+	}
+	
 }

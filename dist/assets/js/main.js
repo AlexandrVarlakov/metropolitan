@@ -1,6 +1,12 @@
+maskPhone('#phone');
 
 let hamburger = document.querySelector('.hamburger');
 let mobnav  = document.querySelector('.mob-nav');
+
+function closeMobMenu( hamburger, mobNav){
+    hamburger.setAttribute('data-state', '0');
+    mobNav.setAttribute('data-state', '0');
+}
 
 
 hamburger.addEventListener('click', function(){
@@ -23,10 +29,12 @@ hamburger.addEventListener('click', function(){
 
        
     } else{
-        this.setAttribute('data-state', '0');
-        mobnav.setAttribute('data-state', '0');
+        
+        closeMobMenu( this, mobnav);
     }
 });
+
+
 
 
 let mobMenuHasChild = document.querySelectorAll('.mob-has-child');
@@ -50,3 +58,51 @@ mobMenuHasChild.forEach( (item) => {
 
     })
  } );
+
+
+
+ let options = {
+    //zIndex: 1000, 
+    //background: 'rgba(12, 130, 121, 0.5)', 
+    //displayFog: 'block', //Значение по умолчанию flex
+    //displayModal: 'flex', //Значение по умолчанию block
+    //showModalAnimationName: 'fadeInBottom', 
+    //closeModalAnimationName: 'fadeOutTop', 
+    closeClasses: ['close-modal'], 
+    //closeModalOnFogClick: false, 
+    showModalAnimationDuration: 800,
+    //closeModalAnimationDuration: 300,
+    showFogAnimationName: 'fadeIn',
+    closeFogAnimationName: 'fadeOut',
+    showFogAnimationDuration: 300,
+    closeFogAnimationDuration: 300,
+
+    documentScrolled: false, 
+    //onModalClose: function(){console.log('modal close');},
+    //onModalOpen: function(){console.log('modal open');}
+
+}
+
+
+
+
+let callFeedbackForm = document.querySelectorAll('.call-feedback-form');
+
+
+
+
+
+callFeedbackForm.forEach( (btn) => {
+
+    btn.addEventListener('click', function(){
+        
+        closeMobMenu( hamburger, mobnav);
+        let modal = new easyModal('modal-form');
+
+        
+
+    });
+
+
+    
+});
