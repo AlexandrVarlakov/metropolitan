@@ -15,7 +15,7 @@
 
 @import 'units/news/_news.scss';
 
-
+@import 'units/about/_about.scss';
 
 @import 'units/pagination/_pagination.scss';
 @import 'units/breadcrumbs/_breadcrumbs.scss';
@@ -332,4 +332,32 @@ main{
 		line-height: 125%;
 		color: #515154;
 	}
+}
+
+.btn-green-border{
+	padding: .8rem 1.85rem;	
+	border: 3px solid #159BBA;;
+	border-radius: 4px;
+	font-weight: 600;
+	font-size: 1.125rem;
+	line-height: 125%;
+	color: #29292C;
+	cursor: pointer;
+
+	transition: 300ms;
+
+
+	&:hover{
+		color: #0B7D98;
+
+		border-color: #0B7D98;;
+	}
+
+
+
+	@media (max-width: 1024px){
+		font-size: 1rem;
+	}
+
+
 }
