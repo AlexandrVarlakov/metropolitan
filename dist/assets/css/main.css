@@ -2519,9 +2519,16 @@
   font-style: normal;
   font-size: .75rem;
   line-height: 120%;
-  font-weight: 500; }
+  font-weight: 500;
+  -webkit-transition: 100ms;
+  -o-transition: 100ms;
+  transition: 100ms; }
   .input-filter:first-of-type {
     margin-right: 8px; }
+  .input-filter:hover {
+    border-color: #6D6D71; }
+  .input-filter:focus {
+    border-color: #159BBA; }
   .input-filter::-webkit-input-placeholder {
     opacity: 1;
     color: #6D6D71;
