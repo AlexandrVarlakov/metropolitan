@@ -70,15 +70,21 @@ mobMenuHasChild.forEach( (item) => {
     //closeModalAnimationName: 'fadeOutTop', 
     closeClasses: ['close-modal'], 
     //closeModalOnFogClick: false, 
-    showModalAnimationDuration: 800,
+    //showModalAnimationDuration: 800,
     //closeModalAnimationDuration: 300,
     showFogAnimationName: 'fadeIn',
     closeFogAnimationName: 'fadeOut',
-    showFogAnimationDuration: 300,
-    closeFogAnimationDuration: 300,
+    showFogAnimationDuration: 500,
+    closeFogAnimationDuration: 500,
 
-    documentScrolled: false, 
-    //onModalClose: function(){console.log('modal close');},
+    documentScrolled: true, 
+    onModalClose: function(){
+        let modalForm = document.querySelector('.modal-form');
+
+        if ( modalForm ){
+            modalForm.removeAttribute('data-for');
+        }
+    },
     //onModalOpen: function(){console.log('modal open');}
 
 }
@@ -97,9 +103,19 @@ callFeedbackForm.forEach( (btn) => {
     btn.addEventListener('click', function(){
         
         closeMobMenu( hamburger, mobnav);
-        let modal = new easyModal('modal-form');
 
-        
+        let member = this.closest('.team-member');
+        let memberId;
+        if ( member ) {
+            memberId = member.id;
+            
+        }
+
+        let modal = new easyModal('modal-form', options);
+
+        if ( memberId ) {
+            document.querySelector('.modal-form').setAttribute('data-for', memberId);
+        }
 
     });
 
