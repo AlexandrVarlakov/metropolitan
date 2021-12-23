@@ -220,3 +220,150 @@ $err-input-border-color: #a23d3d;
         max-width: 203px;
     }
 }
+
+
+.CVForm__line{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+
+
+    margin-top: 24px;
+
+    @media (max-width: 1280px){
+        flex-direction: column;
+    }
+
+    @media (max-width: 768px){
+        margin-top: 0px;
+    }
+}
+
+.CVForm__name-outer-wrap{
+    max-width: 160px;
+}
+
+.CVForm__phone-outer-wrap{
+    max-width: 203px;
+    margin: 0 10px;
+
+    @media (max-width: 1280px){
+        margin: 0;
+    }
+}
+
+.cv-load-btn{
+    display: flex;
+    align-items: center;
+    min-width: 193px;
+    max-width: 240px;
+    img{
+        width: 24px;
+        min-width: 24px;
+        height: 24px;
+        margin-left: 10px;
+    }
+
+    @media (max-width: 1280px){
+        width: 100%;
+        max-width: 387px;
+        justify-content: center;
+        order: 4;
+        margin-top: 15px;
+    }
+
+    @media (max-width: 560px){
+        width: 100%;
+        max-width: 100%;
+    }
+}
+
+.cv-load-btn[data-loaded="0"]{
+    img{
+        display: none;
+    }
+}
+
+.cv-load-btn[data-loaded="1"]{
+    color: #0B7D98;
+}
+
+
+
+.cv-file{
+    width: 0;
+    height: 0;
+    position: absolute;
+}
+
+.send-cv:disabled{
+    background: #E9E9E9;
+    color: #6D6D71;
+    cursor: initial;
+    margin-top: 10px;
+    &:hover{
+        background: #E9E9E9;
+        color: #6D6D71;;
+    }
+}
+
+.cv-text{
+    width: 100%;
+    max-width: 387px;
+    resize: none;
+    margin-top: 10px;
+    font-family: $font-family;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.125rem;
+    line-height: 125%;
+
+
+    color: #6D6D71;
+    border: $input-border;
+    border-radius: $input-br;
+    transition: 100ms;
+    background-color: transparent;
+    border-radius: 5px;
+    height: 155px;
+    padding: 1rem 2rem;
+    outline: none;
+    &::placeholder{
+        color: #6D6D71;;
+        opacity: 1;
+    }
+
+    &:hover{
+        border: 2px solid #6D6D71;
+    }
+    &:focus{
+        border: 3px solid #159BBA;
+    }
+
+    @media (max-width: 1280px){
+        margin-top: 0px;
+    }
+
+    @media (max-width: 560px){
+        width: 100%;
+        max-width: 100%;
+        min-width: 100%;
+    }
+}
+
+.send-cv{
+    margin-top: 10px;
+    
+    @media (max-width: 1280px){
+        width: 100%;
+        max-width: 387px;
+        order: 5;
+    }
+
+    @media (max-width: 560px){
+        width: 100%;
+        max-width: 100%;
+        min-width: 100%;
+    }
+}

@@ -1,0 +1,66 @@
+@@include('part-templates/header.html')
+<main>
+    <section class="section">
+        <div class="section__inner">
+
+            <div class="h-career">
+                <div class="h-career__title">
+                    <h1 class="title">Начните <span>карьеру</span> <br />
+                        в компании <br />
+                        профес&shyсионалов</h1>
+                </div>
+                <div class="h-career__img">
+                    <img src="assets/img/career/career.svg" alt="">
+                </div>
+                <div class="h-career__text">
+                    <p class="middle-text">Мы привлекаем новых риэлторов, готовых активно включаться в процесс купли-продажи объектов недвижимости. Однако даже те люди, которые хотели бы стать специалистами по работе с недвижимостью, порой не очень хорошо себе представляют круг задач, 
+                        с которыми постоянно сталкивается профессиональный риэлтор. </p>
+                    <p class="middle-text">У агента-новичка сразу появляется большое количество вопросов, на которые он всегда может получить ответ, устроившись работать в крупную компанию. Разберемся, с какими именно вопросами они сталкиваются на начальном этапе работы риэлтором.</p>
+                </div>
+                <div class="h-career__form">
+
+                    <form class="CVForm easyForm easyForm-cv" action="send-cv.php" enctype="multipart/form-data">
+
+
+                        <div class="CVForm__line">
+                            <div class="input-outer-wrap CVForm__name-outer-wrap">
+            
+                                <div class="input-wrap ">
+                                    <input type="text" name="name" id="name" placeholder="Ваше имя" class="input-text easyForm__input" required="required">
+                                </div>
+                                <p class="err-msg">Текст ошибки</p>
+                            </div>
+                            <div class="input-outer-wrap CVForm__phone-outer-wrap" >
+                
+                                <div class="input-wrap ">
+                                    <input type="text" name="phone" id="phone" placeholder="+375 (   ) ... - .. - .." class="input-text easyForm__input" required="required" data-type="phone">
+                                </div>
+                                <p class="err-msg">Текст ошибки</p>
+                            </div>
+
+                            <button class="btn-green-border cv-load-btn" data-loaded="0"><span class="cv-load-btn__text">Загрузить CV</span> <img src="assets/img/icons/file-compleet.svg" ></button>
+                            <input type="file" name="cv" id="cv" class="cv-file" accept=".doc, .docx, .pdf">
+                        
+                            <textarea name="cv-text" id="cv-text" class="cv-text" placeholder="Расскажите о себе..."></textarea>
+
+
+                            <button class="send-cv green-btn" disabled="disabled">Оставить заявку</button>
+                        </div>
+                    </form>
+
+                </div>
+            </div>
+
+
+        </div>
+    </section>
+</main>   
+
+
+<div class="cv-success">
+    <div class="cv-success__text-container">
+        <h3 class="feedback-form-title">Ваша заявка принята!</h3>
+    </div>
+    
+</div>
+@@include('part-templates/footer.html')    

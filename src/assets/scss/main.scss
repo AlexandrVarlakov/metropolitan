@@ -18,6 +18,7 @@
 
 @import 'units/about/_about.scss';
 
+@import 'units/career/_career.scss';
 
 @import 'units/services/_services.scss';
 
@@ -176,7 +177,7 @@ main{
 	}
 }
 
-.modal-form{
+.modal-form, .cv-success{
 	width: 100%;
 	max-width: 490px;
 	
@@ -200,6 +201,14 @@ main{
 	}
 }
 
+.cv-success{
+	
+}
+.cv-success__text-container{
+	min-height: 240px;
+	display: flex;
+	align-items: center;
+}
 .feedback-form-title{
 	margin-bottom: 24px;	
 	font-style: normal;

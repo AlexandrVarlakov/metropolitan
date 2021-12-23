@@ -26,7 +26,7 @@ let btnsSend = document.querySelectorAll('.form-btn-send');
 btnsSend.forEach( (btn) => {
     btn.addEventListener('click', function(e){
         e.preventDefault();
-        let form = document.querySelector('.easyForm');
+        let form = document.querySelector('.easyForm-modal');
 
         let errCount = 0;
         let inputs = form.querySelectorAll('.easyForm__input');
@@ -173,3 +173,171 @@ btnsSend.forEach( (btn) => {
 
     })
 }) 
+
+
+let cvLoad = document.querySelector('.cv-load-btn');
+let inputFileCV = document.querySelector('.cv-file');
+
+let sendCV = document.querySelector('.send-cv');
+
+inputFileCV.addEventListener('change', function(e){
+    let loadFile = e.target.files[0];
+
+
+    if (loadFile) {
+        cvLoad.setAttribute('data-loaded', '1');
+        cvLoad.querySelector('.cv-load-btn__text').innerHTML = loadFile.name;
+        sendCV.removeAttribute('disabled');
+    }
+})
+
+
+cvLoad.onclick = function(e){
+    e.preventDefault();
+    inputFileCV.click();
+}
+
+
+sendCV.onclick = function(e){
+    e.preventDefault();
+
+    let form = document.querySelector('.easyForm-cv');
+
+        let errCount = 0;
+        let inputs = form.querySelectorAll('.easyForm__input');
+
+        function getOuterWrap(inp){
+            return inp.closest('.input-outer-wrap');
+
+        }
+
+        inputs.forEach( (input) => {
+            let innerError = 0;
+
+            let outerWrap = getOuterWrap( input );
+            
+            let value = input.value;
+
+            /* Проверяем установлен ли параметр минимальная длина*/
+            let minLength = input.getAttribute('data-minLength');
+
+
+            if ( minLength != null && minLength != undefined ){
+                minLength = +minLength;
+            } else {
+                minLength = false;
+            }
+            
+            /*Конец: Проверяем установлен ли параметр минимальная длина*/
+
+
+            //Проверка на обязательность заполнения
+            if ( value.length < 1 && input.hasAttribute('required') ){
+                let errMsg = outerWrap.querySelector('.err-msg');
+                errMsg.innerHTML = 'Значение поля не может быть пустым';
+
+                innerError++;
+            } 
+
+            //Проверка на минимальную длину
+            if (  minLength &&  value.length < minLength && innerError == 0){
+                let errMsg = outerWrap.querySelector('.err-msg');
+                errMsg.innerHTML = 'Значение поля не может быть короче ' + minLength + ' символов';
+                innerError++;
+            } 
+
+
+            //Проверка на email
+
+            let fieldType = input.getAttribute('data-type');
+
+                        
+            if (  innerError == 0 && fieldType == 'email' && (value.includes('.') === false  || value.includes('@') === false || value.length < 6) ){
+                let errMsg = outerWrap.querySelector('.err-msg');
+                errMsg.innerHTML = 'Некорректное значение поля';
+                innerError++;
+            }
+            
+            if (  innerError == 0 && fieldType == 'phone' && ( value.length < 19) ){
+                let errMsg = outerWrap.querySelector('.err-msg');
+                errMsg.innerHTML = 'Некорректное значение поля';
+                innerError++;
+            }
+
+            if ( innerError > 0){
+                outerWrap.setAttribute('data-err', '1');
+                errCount++;
+            }
+
+        } );
+
+        if ( errCount == 0){
+                
+            let data_body = '';
+
+
+            let phpScript = form.getAttribute('action');
+            
+
+            let formData = new FormData();
+            
+            
+            formData.append("cv", inputFileCV.files[0]);
+            formData.append('phone', document.querySelector('#phone').value);
+            formData.append('name', document.querySelector('#name').value);
+            formData.append('msg', document.querySelector('#cv-text').value);
+            
+
+
+        
+            fetch(phpScript, { 
+                method: "POST",
+                body: formData,   
+                headers:{"content-type": "application/x-www-form-urlencoded"} 
+                })
+                
+            .then( (response) => {
+                    if (response.status !== 200) {           
+                        return Promise.reject();
+                        
+                    }   
+                
+        
+        
+            console.log("Почта отправлена");
+            inputs.forEach ( (input) => {
+                input.value = '';
+            });
+
+            document.querySelector('#cv-text').value = '';
+            document.querySelector("#cv").value = null;
+            this.setAttribute('disabled', 'disabled');
+            document.querySelector(".cv-load-btn__text").innerHTML = "Загрузить CV";
+            document.querySelector(".cv-load-btn").setAttribute('data-loaded', 0);
+
+            let modal = new easyModal('cv-success');
+        
+            
+                
+            setTimeout ( ()=>{
+                let mf = document.querySelector('.modal-fog');
+
+                if (mf) {
+                    mf.click();
+                }
+            }, 1500 )
+            return response.text()
+            })
+            .then(i => console.log(i))
+            .catch(() => {
+                
+                
+                
+
+
+                console.log('ошибка');
+
+
+            }); 
+        }
+}
