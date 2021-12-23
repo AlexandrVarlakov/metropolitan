@@ -1,5 +1,8 @@
 maskPhone('#phone');
 
+maskNum('#min-price');
+maskNum('#max-price');
+
 let hamburger = document.querySelector('.hamburger');
 let mobnav  = document.querySelector('.mob-nav');
 
@@ -122,3 +125,28 @@ callFeedbackForm.forEach( (btn) => {
 
     
 });
+
+
+let  tabs = document.querySelectorAll('.realty-filter__tab');
+
+let filterSheets = document.querySelectorAll('.realty-filter__sheet');
+
+function removeActive(compList){
+    compList.forEach( (comp) => {
+        comp.classList.remove('active');  
+    } )
+}
+
+
+tabs.forEach( (tab) => {
+    tab.addEventListener('click', function(){
+        removeActive(tabs);
+        removeActive(filterSheets);
+
+        this.classList.add('active');
+        
+        let numSheet = +(this.getAttribute('data-sheet'));
+        filterSheets[numSheet].classList.add('active');
+        
+    })
+})

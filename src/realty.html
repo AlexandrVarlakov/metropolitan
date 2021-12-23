@@ -1,0 +1,359 @@
+@@include('part-templates/header.html')
+<main>
+    <section class="section realty-banner">
+        <div class="section__inner">
+            <div class="realty-filter">
+                <div class="realty-filter__tabs">
+                    <div class="realty-filter__tab active" data-sheet="0">
+                        <p>Квартиры</p>
+                    </div>
+                    <div class="realty-filter__tab" data-sheet="1">
+                        <p>Дома</p>
+                    </div>
+                    <div class="realty-filter__tab" data-sheet="2">
+                        <p>Коммерческая</p>
+                    </div>
+                </div>
+                <div class="realty-filter__sheets">
+                    <form class="realty-filter__sheet active">
+                        <input type="hidden" value="flats" name="type">
+                        <div class="realty-filter__filter-block">
+                            <p>0Цена ($)</p>
+                            <div>
+                                <input type="text" id="min-price" name="min-price" class="input-filter" placeholder="от" >
+                                <input type="text" id="max-price" name="max-price" class="input-filter" placeholder="до">
+                            </div>
+                            
+                        </div>
+                        <div class="realty-filter__filter-block">
+                            <p>Комнат</p>
+
+                            <div>
+                                <input type="text" id="min-room" name="min-room" class="input-filter" placeholder="от" >
+                                <input type="text" id="max-room" name="max-room" class="input-filter" placeholder="до">
+                            </div>
+                        </div>
+                        <div class="realty-filter__filter-block">
+                            <p>Площадь (м<sup>2</sup>)</p>
+                            <div>
+                                <input type="text" id="min-square" name="min-square" class="input-filter" placeholder="от" >
+                                <input type="text" id="max-square" name="max-square" class="input-filter" placeholder="до">
+                            </div>
+                        </div>
+                        <div class="realty-filter__filter-block">
+                            <button class="green-btn">
+                                Найти
+                            </button>
+                        </div>
+                    </form>
+                    <form class="realty-filter__sheet">
+                        <input type="hidden" value="house" name="type">
+                        <div class="realty-filter__filter-block">
+                            <p>1Цена ($)</p>
+                            <div>
+                                <input type="text" id="min-price" name="min-price" class="input-filter" placeholder="от" >
+                                <input type="text" id="max-price" name="max-price" class="input-filter" placeholder="до">
+                            </div>
+                            
+                        </div>
+                        <div class="realty-filter__filter-block">
+                            <p>Комнат</p>
+
+                            <div>
+                                <input type="text" id="min-room" name="min-room" class="input-filter" placeholder="от" >
+                                <input type="text" id="max-room" name="max-room" class="input-filter" placeholder="до">
+                            </div>
+                        </div>
+                        <div class="realty-filter__filter-block">
+                            <p>Площадь (м<sup>2</sup>)</p>
+                            <div>
+                                <input type="text" id="min-square" name="min-square" class="input-filter" placeholder="от" >
+                                <input type="text" id="max-square" name="max-square" class="input-filter" placeholder="до">
+                            </div>
+                        </div>
+                        <div class="realty-filter__filter-block">
+                            <button class="green-btn">
+                                Найти
+                            </button>
+                        </div>
+                    </form>
+                    <form class="realty-filter__sheet" >
+                        <input type="hidden" value="commercial" name="type">
+                        <div class="realty-filter__filter-block">
+                            <p>2Цена ($)</p>
+                            <div>
+                                <input type="text" id="min-price" name="min-price" class="input-filter" placeholder="от" >
+                                <input type="text" id="max-price" name="max-price" class="input-filter" placeholder="до">
+                            </div>
+                            
+                        </div>
+                        <div class="realty-filter__filter-block">
+                            <p>Комнат</p>
+
+                            <div>
+                                <input type="text" id="min-room" name="min-room" class="input-filter" placeholder="от" >
+                                <input type="text" id="max-room" name="max-room" class="input-filter" placeholder="до">
+                            </div>
+                        </div>
+                        <div class="realty-filter__filter-block">
+                            <p>Площадь (м<sup>2</sup>)</p>
+                            <div>
+                                <input type="text" id="min-square" name="min-square" class="input-filter" placeholder="от" >
+                                <input type="text" id="max-square" name="max-square" class="input-filter" placeholder="до">
+                            </div>
+                        </div>
+                        <div class="realty-filter__filter-block">
+                            <button class="green-btn">
+                                Найти
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="section realty-section">
+        <div class="section__inner">
+            <div class="realty-list">
+                <a class="realty-card" href="/realty-page.html">
+                    <div class="realty-card__img-box">
+                        <img src="assets/img/realty/1.jpg" alt="">
+                    </div>
+
+                    <div class="realty-card__text-box">
+                        <h3 class="card-title">3-комн. квартира</h3>
+                        <address>ул. Тимирязева, 11</address>
+
+
+                        <div class="realty-card__bottom-cnt">
+                            <div class="realty-card__realty-square">
+                                <p>Площадь (общая/жилая):</p>
+                                <p>112/86 м<sup>2</sup></p>
+                            </div>
+                            <div class="realty-card__price">
+                                
+
+                                <p>89000 USD</p>
+                                <p>272564 BYN</p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+
+                <a class="realty-card" href="/realty-page.html">
+                    <div class="realty-card__img-box">
+                        <img src="assets/img/realty/2.jpg" alt="">
+                    </div>
+
+                    <div class="realty-card__text-box">
+                        <h3 class="card-title">3-комн. квартира</h3>
+                        <address>ул. Тимирязева, 11</address>
+
+
+                        <div class="realty-card__bottom-cnt">
+                            <div class="realty-card__realty-square">
+                                <p>Площадь (общая/жилая):</p>
+                                <p>112/86 м<sup>2</sup></p>
+                            </div>
+                            <div class="realty-card__price">
+                                
+
+                                <p>89000 USD</p>
+                                <p>272564 BYN</p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+                <a class="realty-card" href="/realty-page.html">
+                    <div class="realty-card__img-box">
+                        <img src="assets/img/realty/3.jpg" alt="">
+                    </div>
+
+                    <div class="realty-card__text-box">
+                        <h3 class="card-title">3-комн. квартира</h3>
+                        <address>ул. Тимирязева, 11</address>
+
+
+                        <div class="realty-card__bottom-cnt">
+                            <div class="realty-card__realty-square">
+                                <p>Площадь (общая/жилая):</p>
+                                <p>112/86 м<sup>2</sup></p>
+                            </div>
+                            <div class="realty-card__price">
+                                
+
+                                <p>89000 USD</p>
+                                <p>272564 BYN</p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+                <a class="realty-card" href="/realty-page.html">
+                    <div class="realty-card__img-box">
+                        <img src="assets/img/realty/4.jpg" alt="">
+                    </div>
+
+                    <div class="realty-card__text-box">
+                        <h3 class="card-title">3-комн. квартира</h3>
+                        <address>ул. Тимирязева, 11</address>
+
+
+                        <div class="realty-card__bottom-cnt">
+                            <div class="realty-card__realty-square">
+                                <p>Площадь (общая/жилая):</p>
+                                <p>112/86 м<sup>2</sup></p>
+                            </div>
+                            <div class="realty-card__price">
+                                
+
+                                <p>89000 USD</p>
+                                <p>272564 BYN</p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+
+                <a class="realty-card" href="/realty-page.html">
+                    <div class="realty-card__img-box">
+                        <img src="assets/img/realty/5.jpg" alt="">
+                    </div>
+
+                    <div class="realty-card__text-box">
+                        <h3 class="card-title">3-комн. квартира</h3>
+                        <address>ул. Тимирязева, 11</address>
+
+
+                        <div class="realty-card__bottom-cnt">
+                            <div class="realty-card__realty-square">
+                                <p>Площадь (общая/жилая):</p>
+                                <p>112/86 м<sup>2</sup></p>
+                            </div>
+                            <div class="realty-card__price">
+                                
+
+                                <p>89000 USD</p>
+                                <p>272564 BYN</p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+                <a class="realty-card" href="/realty-page.html">
+                    <div class="realty-card__img-box">
+                        <img src="assets/img/realty/6.jpg" alt="">
+                    </div>
+
+                    <div class="realty-card__text-box">
+                        <h3 class="card-title">3-комн. квартира</h3>
+                        <address>ул. Тимирязева, 11</address>
+
+
+                        <div class="realty-card__bottom-cnt">
+                            <div class="realty-card__realty-square">
+                                <p>Площадь (общая/жилая):</p>
+                                <p>112/86 м<sup>2</sup></p>
+                            </div>
+                            <div class="realty-card__price">
+                                
+
+                                <p>89000 USD</p>
+                                <p>272564 BYN</p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+                <a class="realty-card" href="/realty-page.html">
+                    <div class="realty-card__img-box">
+                        <img src="assets/img/realty/7.jpg" alt="">
+                    </div>
+
+                    <div class="realty-card__text-box">
+                        <h3 class="card-title">3-комн. квартира</h3>
+                        <address>ул. Тимирязева, 11</address>
+
+
+                        <div class="realty-card__bottom-cnt">
+                            <div class="realty-card__realty-square">
+                                <p>Площадь (общая/жилая):</p>
+                                <p>112/86 м<sup>2</sup></p>
+                            </div>
+                            <div class="realty-card__price">
+                                
+
+                                <p>89000 USD</p>
+                                <p>272564 BYN</p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+                <a class="realty-card" href="/realty-page.html">
+                    <div class="realty-card__img-box">
+                        <img src="assets/img/realty/8.jpg" alt="">
+                    </div>
+
+                    <div class="realty-card__text-box">
+                        <h3 class="card-title">3-комн. квартира</h3>
+                        <address>ул. Тимирязева, 11</address>
+
+
+                        <div class="realty-card__bottom-cnt">
+                            <div class="realty-card__realty-square">
+                                <p>Площадь (общая/жилая):</p>
+                                <p>112/86 м<sup>2</sup></p>
+                            </div>
+                            <div class="realty-card__price">
+                                
+
+                                <p>89000 USD</p>
+                                <p>272564 BYN</p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+                <a class="realty-card" href="/realty-page.html">
+                    <div class="realty-card__img-box">
+                        <img src="assets/img/realty/9.jpg" alt="">
+                    </div>
+
+                    <div class="realty-card__text-box">
+                        <h3 class="card-title">3-комн. квартира</h3>
+                        <address>ул. Тимирязева, 11</address>
+
+
+                        <div class="realty-card__bottom-cnt">
+                            <div class="realty-card__realty-square">
+                                <p>Площадь (общая/жилая):</p>
+                                <p>112/86 м<sup>2</sup></p>
+                            </div>
+                            <div class="realty-card__price">
+                                
+
+                                <p>89000 USD</p>
+                                <p>272564 BYN</p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>    
+            
+            <div class="pagination">
+                <a href="#" class="pagination__link active">1</a>
+                <a href="#" class="pagination__link">2</a>
+                <a href="#" class="pagination__link">3</a>
+                <a class="pagination__link pagination__link--gap">. . .</a>
+                <a href="#" class="pagination__link">5</a>
+            </div>
+        </div>
+    </section>
+
+
+</main>   
+@@include('part-templates/footer.html')    

@@ -189,329 +189,361 @@
 
 <body>
 <main>
-    <section class="section">
+    <section class="section realty-banner">
         <div class="section__inner">
-            
-            
-            <div class="about-h">
-                <div class="about-h__title-block">
-                    <h1 class="title">Прогрес&shyсивный <br />
-                        взгляд на <span>рынок</span> <br />
-                        недвижи&shyмости</h1>
+            <div class="realty-filter">
+                <div class="realty-filter__tabs">
+                    <div class="realty-filter__tab active" data-sheet="0">
+                        <p>Квартиры</p>
+                    </div>
+                    <div class="realty-filter__tab" data-sheet="1">
+                        <p>Дома</p>
+                    </div>
+                    <div class="realty-filter__tab" data-sheet="2">
+                        <p>Коммерческая</p>
+                    </div>
                 </div>
-                <div class="about-h__img-block">
-                    <img src="assets/img/about/about.svg" alt="">
-                </div>
-                <div class="about-h__text-block">
-                    <p class="middle-text">
-                        Ищете надежные риэлторские агентства Минска? Обратитесь в Этажи. Мы предоставляем комплексное риэлторское, брокерское, юридическое сопровождение. Компания оказывает услуги на рынке с 2000 года. 
-                    </p>
-                    <p class="middle-text">
-                        Официальный сайт агентства недвижимости Этажи позволяет удобно выбирать квартиры, рассчитать через калькулятор и оформить ипотеку онлайн. 
-                    </p>
-                    <p class="middle-text">
-                        Важное отличие Этажи от других риэлторских компаний - гарантийный сертификат. В случае проблем мы компенсируем ваши потери по сделке из собственного фонда. Также мало какое агентство по продаже недвижимости может предложить эффективное оформление заявки на ипотеку, а также дополнительные скидки и бонусы. С нами шанс на одобрение ипотеки на 25% выше! 
-                    </p>
-                </div>
-            </div>
-
-            <div class="team">
-
-                <h2 class="title">Наша команда</h2>
-
-                <div class="team-list">
-
-                    <div class="team-list__cell">
-                        <div class="team-member" >
-
-                            <div class="team-member__img-block">
-                                <div class="team-member__img-block--inner">
-                                    <img src="assets/img/about/team/1.png" alt="member">
-                                </div>    
+                <div class="realty-filter__sheets">
+                    <form class="realty-filter__sheet active">
+                        <input type="hidden" value="flats" name="type">
+                        <div class="realty-filter__filter-block">
+                            <p>0Цена ($)</p>
+                            <div>
+                                <input type="text" id="min-price" name="min-price" class="input-filter" placeholder="от" >
+                                <input type="text" id="max-price" name="max-price" class="input-filter" placeholder="до">
                             </div>
                             
-                            <div class="team-member__info">
-                                <h3 class="card-title">Валентин</h3>
-                                <p class="team-member__text-line">Возраст: <span>38 лет</span></p>
-                                <p class="team-member__text-line">Проф. стаж: <span>9 лет</span></p>
-                                <p class="team-member__text-line">Проданных объектов: <span>42</span></p>
-
-                                <button class="btn-green-border call-feedback-form">Связаться</button>
-                            </div>
-
-
-
                         </div>
-                    </div>
+                        <div class="realty-filter__filter-block">
+                            <p>Комнат</p>
 
-
-                    <div class="team-list__cell">
-                        <div class="team-member" id="2">
-
-                            <div class="team-member__img-block">
-                                <div class="team-member__img-block--inner">
-                                    <img src="assets/img/about/team/2.png" alt="member">
-                                </div>    
+                            <div>
+                                <input type="text" id="min-room" name="min-room" class="input-filter" placeholder="от" >
+                                <input type="text" id="max-room" name="max-room" class="input-filter" placeholder="до">
+                            </div>
+                        </div>
+                        <div class="realty-filter__filter-block">
+                            <p>Площадь (м<sup>2</sup>)</p>
+                            <div>
+                                <input type="text" id="min-square" name="min-square" class="input-filter" placeholder="от" >
+                                <input type="text" id="max-square" name="max-square" class="input-filter" placeholder="до">
+                            </div>
+                        </div>
+                        <div class="realty-filter__filter-block">
+                            <button class="green-btn">
+                                Найти
+                            </button>
+                        </div>
+                    </form>
+                    <form class="realty-filter__sheet">
+                        <input type="hidden" value="house" name="type">
+                        <div class="realty-filter__filter-block">
+                            <p>1Цена ($)</p>
+                            <div>
+                                <input type="text" id="min-price" name="min-price" class="input-filter" placeholder="от" >
+                                <input type="text" id="max-price" name="max-price" class="input-filter" placeholder="до">
                             </div>
                             
-                            <div class="team-member__info">
-                                <h3 class="card-title">Сергей</h3>
-                                <p class="team-member__text-line">Возраст: <span>38 лет</span></p>
-                                <p class="team-member__text-line">Проф. стаж: <span>9 лет</span></p>
-                                <p class="team-member__text-line">Проданных объектов: <span>42</span></p>
-
-                                <button class="btn-green-border call-feedback-form">Связаться</button>
-                            </div>
-
-
-
                         </div>
-                    </div>
+                        <div class="realty-filter__filter-block">
+                            <p>Комнат</p>
 
-
-
-                    <div class="team-list__cell">
-                        <div class="team-member " id="3">
-
-                            <div class="team-member__img-block">
-                                <div class="team-member__img-block--inner">
-                                    <img src="assets/img/about/team/3.png" alt="member">
-                                </div>    
+                            <div>
+                                <input type="text" id="min-room" name="min-room" class="input-filter" placeholder="от" >
+                                <input type="text" id="max-room" name="max-room" class="input-filter" placeholder="до">
+                            </div>
+                        </div>
+                        <div class="realty-filter__filter-block">
+                            <p>Площадь (м<sup>2</sup>)</p>
+                            <div>
+                                <input type="text" id="min-square" name="min-square" class="input-filter" placeholder="от" >
+                                <input type="text" id="max-square" name="max-square" class="input-filter" placeholder="до">
+                            </div>
+                        </div>
+                        <div class="realty-filter__filter-block">
+                            <button class="green-btn">
+                                Найти
+                            </button>
+                        </div>
+                    </form>
+                    <form class="realty-filter__sheet" >
+                        <input type="hidden" value="commercial" name="type">
+                        <div class="realty-filter__filter-block">
+                            <p>2Цена ($)</p>
+                            <div>
+                                <input type="text" id="min-price" name="min-price" class="input-filter" placeholder="от" >
+                                <input type="text" id="max-price" name="max-price" class="input-filter" placeholder="до">
                             </div>
                             
-                            <div class="team-member__info">
-                                <h3 class="card-title">Анна</h3>
-                                <p class="team-member__text-line">Возраст: <span>38 лет</span></p>
-                                <p class="team-member__text-line">Проф. стаж: <span>9 лет</span></p>
-                                <p class="team-member__text-line">Проданных объектов: <span>42</span></p>
-
-                                <button class="btn-green-border call-feedback-form">Связаться</button>
-                            </div>
-
-
-
                         </div>
-                    </div>
+                        <div class="realty-filter__filter-block">
+                            <p>Комнат</p>
 
-
-                    <div class="team-list__cell">
-                        <div class="team-member" id="4">
-
-                            <div class="team-member__img-block">
-                                <div class="team-member__img-block--inner">
-                                    <img src="assets/img/about/team/4.png" alt="member">
-                                </div>    
+                            <div>
+                                <input type="text" id="min-room" name="min-room" class="input-filter" placeholder="от" >
+                                <input type="text" id="max-room" name="max-room" class="input-filter" placeholder="до">
                             </div>
-                            
-                            <div class="team-member__info">
-                                <h3 class="card-title">Елизавета</h3>
-                                <p class="team-member__text-line">Возраст: <span>38 лет</span></p>
-                                <p class="team-member__text-line">Проф. стаж: <span>9 лет</span></p>
-                                <p class="team-member__text-line">Проданных объектов: <span>42</span></p>
-
-                                <button class="btn-green-border call-feedback-form">Связаться</button>
-                            </div>
-
-
-
                         </div>
-                    </div>
-
-                    <div class="team-list__cell">
-                        <div class="team-member" id="5">
-
-                            <div class="team-member__img-block">
-                                <div class="team-member__img-block--inner">
-                                    <img src="assets/img/about/team/1.png" alt="member">
-                                </div>    
+                        <div class="realty-filter__filter-block">
+                            <p>Площадь (м<sup>2</sup>)</p>
+                            <div>
+                                <input type="text" id="min-square" name="min-square" class="input-filter" placeholder="от" >
+                                <input type="text" id="max-square" name="max-square" class="input-filter" placeholder="до">
                             </div>
-                            
-                            <div class="team-member__info">
-                                <h3 class="card-title">Валентин</h3>
-                                <p class="team-member__text-line">Возраст: <span>38 лет</span></p>
-                                <p class="team-member__text-line">Проф. стаж: <span>9 лет</span></p>
-                                <p class="team-member__text-line">Проданных объектов: <span>42</span></p>
-
-                                <button class="btn-green-border call-feedback-form">Связаться</button>
-                            </div>
-
-
-
                         </div>
-                    </div>
-
-
-                    <div class="team-list__cell">
-                        <div class="team-member" id="6">
-
-                            <div class="team-member__img-block">
-                                <div class="team-member__img-block--inner">
-                                    <img src="assets/img/about/team/2.png" alt="member">
-                                </div>    
-                            </div>
-                            
-                            <div class="team-member__info">
-                                <h3 class="card-title">Сергей</h3>
-                                <p class="team-member__text-line">Возраст: <span>38 лет</span></p>
-                                <p class="team-member__text-line">Проф. стаж: <span>9 лет</span></p>
-                                <p class="team-member__text-line">Проданных объектов: <span>42</span></p>
-
-                                <button class="btn-green-border call-feedback-form">Связаться</button>
-                            </div>
-
-
-
+                        <div class="realty-filter__filter-block">
+                            <button class="green-btn">
+                                Найти
+                            </button>
                         </div>
-                    </div>
-
-
-
-                    <div class="team-list__cell">
-                        <div class="team-member" id="7">
-
-                            <div class="team-member__img-block">
-                                <div class="team-member__img-block--inner">
-                                    <img src="assets/img/about/team/3.png" alt="member">
-                                </div>    
-                            </div>
-                            
-                            <div class="team-member__info">
-                                <h3 class="card-title">Анна</h3>
-                                <p class="team-member__text-line">Возраст: <span>38 лет</span></p>
-                                <p class="team-member__text-line">Проф. стаж: <span>9 лет</span></p>
-                                <p class="team-member__text-line">Проданных объектов: <span>42</span></p>
-
-                                <button class="btn-green-border call-feedback-form">Связаться</button>
-                            </div>
-
-
-
-                        </div>
-                    </div>
-
-
-                    <div class="team-list__cell">
-                        <div class="team-member" id="8">
-
-                            <div class="team-member__img-block">
-                                <div class="team-member__img-block--inner">
-                                    <img src="assets/img/about/team/4.png" alt="member">
-                                </div>    
-                            </div>
-                            
-                            <div class="team-member__info">
-                                <h3 class="card-title">Елизавета</h3>
-                                <p class="team-member__text-line">Возраст: <span>38 лет</span></p>
-                                <p class="team-member__text-line">Проф. стаж: <span>9 лет</span></p>
-                                <p class="team-member__text-line">Проданных объектов: <span>42</span></p>
-
-                                <button class="btn-green-border call-feedback-form">Связаться</button>
-                            </div>
-
-
-
-                        </div>
-                    </div>
-
+                    </form>
                 </div>
             </div>
-
-
-            <div class="a-docs">
-                <h2 class="title">Документы</h2>
-
-                <div class="docs-grid">
-                    <div class="docs-cell">
-                        <h3 class="card-title">Учредительные документы</h3>
-
-
-                        <a href="assets/img/no_photo.jpg" download class="doc-link">
-                            <img src="assets/img/icons/pdf.svg">
-                            <span>Лицензия АН «Метрополитан»</span>
-                        </a>                        
-
-
-                        <a href="assets/img/no_photo.jpg" download class="doc-link">
-                            <img src="assets/img/icons/pdf.svg">
-                            <span>Свидетельство о государственной регистрации <br /> АН «Метрополитан»</span>
-                        </a> 
-
-                        <a href="assets/img/no_photo.jpg" download class="doc-link">
-                            <img src="assets/img/icons/pdf.svg">
-                            <span>Страховой полис АН «Метрополитан»</span>
-                        </a> 
-                    </div>
-
-                    <div class="docs-cell">
-                        <h3 class="card-title">Договора</h3>
-
-
-                        <a href="assets/img/no_photo.jpg" download class="doc-link">
-                            <img src="assets/img/icons/pdf.svg">
-                            <span>Лицензия АН «Метрополитан»</span>
-                        </a>                        
-
-
-                        <a href="assets/img/no_photo.jpg" download class="doc-link">
-                            <img src="assets/img/icons/pdf.svg">
-                            <span>Свидетельство о государственной регистрации <br /> АН «Метрополитан»</span>
-                        </a> 
-
-                        <a href="assets/img/no_photo.jpg" download class="doc-link">
-                            <img src="assets/img/icons/pdf.svg">
-                            <span>Страховой полис АН «Метрополитан»</span>
-                        </a> 
-                    </div>
-
-                    <div class="docs-cell">
-                        <h3 class="card-title">Свидетельства об аттестации риэлторов</h3>
-
-
-                        <a href="assets/img/no_photo.jpg" download class="doc-link">
-                            <img src="assets/img/icons/pdf.svg">
-                            <span>Лицензия АН «Метрополитан»</span>
-                        </a>                        
-
-
-                        <a href="assets/img/no_photo.jpg" download class="doc-link">
-                            <img src="assets/img/icons/pdf.svg">
-                            <span>Свидетельство о государственной регистрации <br /> АН «Метрополитан»</span>
-                        </a> 
-
-                        <a href="assets/img/no_photo.jpg" download class="doc-link">
-                            <img src="assets/img/icons/pdf.svg">
-                            <span>Страховой полис АН «Метрополитан»</span>
-                        </a> 
-                    </div>
-
-                    <div class="docs-cell">
-                        <h3 class="card-title">Нормативные документы</h3>
-
-
-                        <a href="assets/img/no_photo.jpg" download class="doc-link">
-                            <img src="assets/img/icons/pdf.svg">
-                            <span>Лицензия АН «Метрополитан»</span>
-                        </a>                        
-
-
-                        <a href="assets/img/no_photo.jpg" download class="doc-link">
-                            <img src="assets/img/icons/pdf.svg">
-                            <span>Свидетельство о государственной регистрации <br /> АН «Метрополитан»</span>
-                        </a> 
-
-                        <a href="assets/img/no_photo.jpg" download class="doc-link">
-                            <img src="assets/img/icons/pdf.svg">
-                            <span>Страховой полис АН «Метрополитан»</span>
-                        </a> 
-                    </div>
-                </div>
-
-               
-                
-            </div>
-
         </div>
     </section>
+    
+    <section class="section realty-section">
+        <div class="section__inner">
+            <div class="realty-list">
+                <a class="realty-card" href="/realty-page.html">
+                    <div class="realty-card__img-box">
+                        <img src="assets/img/realty/1.jpg" alt="">
+                    </div>
+
+                    <div class="realty-card__text-box">
+                        <h3 class="card-title">3-комн. квартира</h3>
+                        <address>ул. Тимирязева, 11</address>
+
+
+                        <div class="realty-card__bottom-cnt">
+                            <div class="realty-card__realty-square">
+                                <p>Площадь (общая/жилая):</p>
+                                <p>112/86 м<sup>2</sup></p>
+                            </div>
+                            <div class="realty-card__price">
+                                
+
+                                <p>89000 USD</p>
+                                <p>272564 BYN</p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+
+                <a class="realty-card" href="/realty-page.html">
+                    <div class="realty-card__img-box">
+                        <img src="assets/img/realty/2.jpg" alt="">
+                    </div>
+
+                    <div class="realty-card__text-box">
+                        <h3 class="card-title">3-комн. квартира</h3>
+                        <address>ул. Тимирязева, 11</address>
+
+
+                        <div class="realty-card__bottom-cnt">
+                            <div class="realty-card__realty-square">
+                                <p>Площадь (общая/жилая):</p>
+                                <p>112/86 м<sup>2</sup></p>
+                            </div>
+                            <div class="realty-card__price">
+                                
+
+                                <p>89000 USD</p>
+                                <p>272564 BYN</p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+                <a class="realty-card" href="/realty-page.html">
+                    <div class="realty-card__img-box">
+                        <img src="assets/img/realty/3.jpg" alt="">
+                    </div>
+
+                    <div class="realty-card__text-box">
+                        <h3 class="card-title">3-комн. квартира</h3>
+                        <address>ул. Тимирязева, 11</address>
+
+
+                        <div class="realty-card__bottom-cnt">
+                            <div class="realty-card__realty-square">
+                                <p>Площадь (общая/жилая):</p>
+                                <p>112/86 м<sup>2</sup></p>
+                            </div>
+                            <div class="realty-card__price">
+                                
+
+                                <p>89000 USD</p>
+                                <p>272564 BYN</p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+                <a class="realty-card" href="/realty-page.html">
+                    <div class="realty-card__img-box">
+                        <img src="assets/img/realty/4.jpg" alt="">
+                    </div>
+
+                    <div class="realty-card__text-box">
+                        <h3 class="card-title">3-комн. квартира</h3>
+                        <address>ул. Тимирязева, 11</address>
+
+
+                        <div class="realty-card__bottom-cnt">
+                            <div class="realty-card__realty-square">
+                                <p>Площадь (общая/жилая):</p>
+                                <p>112/86 м<sup>2</sup></p>
+                            </div>
+                            <div class="realty-card__price">
+                                
+
+                                <p>89000 USD</p>
+                                <p>272564 BYN</p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+
+                <a class="realty-card" href="/realty-page.html">
+                    <div class="realty-card__img-box">
+                        <img src="assets/img/realty/5.jpg" alt="">
+                    </div>
+
+                    <div class="realty-card__text-box">
+                        <h3 class="card-title">3-комн. квартира</h3>
+                        <address>ул. Тимирязева, 11</address>
+
+
+                        <div class="realty-card__bottom-cnt">
+                            <div class="realty-card__realty-square">
+                                <p>Площадь (общая/жилая):</p>
+                                <p>112/86 м<sup>2</sup></p>
+                            </div>
+                            <div class="realty-card__price">
+                                
+
+                                <p>89000 USD</p>
+                                <p>272564 BYN</p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+                <a class="realty-card" href="/realty-page.html">
+                    <div class="realty-card__img-box">
+                        <img src="assets/img/realty/6.jpg" alt="">
+                    </div>
+
+                    <div class="realty-card__text-box">
+                        <h3 class="card-title">3-комн. квартира</h3>
+                        <address>ул. Тимирязева, 11</address>
+
+
+                        <div class="realty-card__bottom-cnt">
+                            <div class="realty-card__realty-square">
+                                <p>Площадь (общая/жилая):</p>
+                                <p>112/86 м<sup>2</sup></p>
+                            </div>
+                            <div class="realty-card__price">
+                                
+
+                                <p>89000 USD</p>
+                                <p>272564 BYN</p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+                <a class="realty-card" href="/realty-page.html">
+                    <div class="realty-card__img-box">
+                        <img src="assets/img/realty/7.jpg" alt="">
+                    </div>
+
+                    <div class="realty-card__text-box">
+                        <h3 class="card-title">3-комн. квартира</h3>
+                        <address>ул. Тимирязева, 11</address>
+
+
+                        <div class="realty-card__bottom-cnt">
+                            <div class="realty-card__realty-square">
+                                <p>Площадь (общая/жилая):</p>
+                                <p>112/86 м<sup>2</sup></p>
+                            </div>
+                            <div class="realty-card__price">
+                                
+
+                                <p>89000 USD</p>
+                                <p>272564 BYN</p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+                <a class="realty-card" href="/realty-page.html">
+                    <div class="realty-card__img-box">
+                        <img src="assets/img/realty/8.jpg" alt="">
+                    </div>
+
+                    <div class="realty-card__text-box">
+                        <h3 class="card-title">3-комн. квартира</h3>
+                        <address>ул. Тимирязева, 11</address>
+
+
+                        <div class="realty-card__bottom-cnt">
+                            <div class="realty-card__realty-square">
+                                <p>Площадь (общая/жилая):</p>
+                                <p>112/86 м<sup>2</sup></p>
+                            </div>
+                            <div class="realty-card__price">
+                                
+
+                                <p>89000 USD</p>
+                                <p>272564 BYN</p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+                <a class="realty-card" href="/realty-page.html">
+                    <div class="realty-card__img-box">
+                        <img src="assets/img/realty/9.jpg" alt="">
+                    </div>
+
+                    <div class="realty-card__text-box">
+                        <h3 class="card-title">3-комн. квартира</h3>
+                        <address>ул. Тимирязева, 11</address>
+
+
+                        <div class="realty-card__bottom-cnt">
+                            <div class="realty-card__realty-square">
+                                <p>Площадь (общая/жилая):</p>
+                                <p>112/86 м<sup>2</sup></p>
+                            </div>
+                            <div class="realty-card__price">
+                                
+
+                                <p>89000 USD</p>
+                                <p>272564 BYN</p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>    
+            
+            <div class="pagination">
+                <a href="#" class="pagination__link active">1</a>
+                <a href="#" class="pagination__link">2</a>
+                <a href="#" class="pagination__link">3</a>
+                <a class="pagination__link pagination__link--gap">. . .</a>
+                <a href="#" class="pagination__link">5</a>
+            </div>
+        </div>
+    </section>
+
+
 </main>   
 
 <footer class="footer">
@@ -571,4 +603,4 @@
 <script src="assets/js/main.js"></script>
     
 </body>
-</html>   
+</html>    
