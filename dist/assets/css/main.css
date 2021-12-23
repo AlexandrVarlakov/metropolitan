@@ -2241,6 +2241,7 @@
     max-width: 528px; }
 
 .section.realty-banner {
+  margin-top: -40px;
   padding-top: 40px;
   position: relative;
   min-height: 300px; }
@@ -2561,6 +2562,21 @@
       margin-top: 16px; } }
   .realty-filter__filter-block button {
     height: 100%; }
+
+.realty-page-s {
+  position: relative; }
+
+.realty-page-banner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 300px;
+  width: 100%;
+  background-image: url("../img/realty/10.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index: -1; }
 
 .services-list {
   width: 100%;
