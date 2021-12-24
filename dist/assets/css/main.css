@@ -2126,13 +2126,36 @@
   margin-top: 12px; }
   .team-member__info .card-title {
     text-align: center; }
-  .team-member__info button {
-    margin-top: 14px; }
   @media (max-width: 480px) {
     .team-member__info {
       margin-top: 0; }
       .team-member__info .card-title {
         text-align: left; } }
+
+.team-member__phones-block {
+  margin: 24px 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column; }
+  .team-member__phones-block a {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.125rem;
+    line-height: 120%;
+    /* or 22px */
+    color: #000000; }
+    @media (max-width: 1024px) {
+      .team-member__phones-block a {
+        font-size: 1rem; } }
+  @media (max-width: 1024px) {
+    .team-member__phones-block {
+      margin: 20px 0; } }
 
 .team-member__text-line {
   text-align: center;
@@ -2563,8 +2586,24 @@
   .realty-filter__filter-block button {
     height: 100%; }
 
-.realty-page-s {
-  position: relative; }
+.section.realty-page-s {
+  position: relative;
+  margin-top: -40px;
+  padding-top: 40px; }
+  @media (max-width: 1024px) {
+    .section.realty-page-s {
+      margin-top: 0px; } }
+  .section.realty-page-s .section__inner {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 24px;
+    border: 1px solid #F6F8F9;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    border-radius: 8px; }
+    @media (max-width: 768px) {
+      .section.realty-page-s .section__inner {
+        padding: 16px 8px; } }
 
 .realty-page-banner {
   position: absolute;
@@ -2577,6 +2616,159 @@
   background-repeat: no-repeat;
   background-position: center;
   z-index: -1; }
+  @media (max-width: 768px) {
+    .realty-page-banner {
+      height: 220px; } }
+
+.object-gallery {
+  overflow: hidden; }
+
+.small-obj-gallery--wrap {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 16px;
+  padding-bottom: 24px;
+  border-bottom: 1px solid #F6F8F9; }
+  @media (max-width: 768px) {
+    .small-obj-gallery--wrap {
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+          -ms-flex-align: center;
+              align-items: center;
+      padding-bottom: 0px; } }
+
+.small-obj-gallery {
+  overflow: hidden;
+  max-width: 1020px; }
+
+.realty-info {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 24px; }
+  @media (max-width: 860px) {
+    .realty-info {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: column;
+          -ms-flex-direction: column;
+              flex-direction: column; } }
+
+.realty-info__text-block {
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1; }
+  .realty-info__text-block .breadcrumbs {
+    margin: 8px 0 12px; }
+
+.realty-title {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 2.25rem;
+  line-height: 125%;
+  color: #29292C; }
+  @media (max-width: 1024px) {
+    .realty-title {
+      font-size: 1.5rem; } }
+
+.realty-info__member-wrap {
+  max-width: 310px;
+  min-width: 310px;
+  width: 310px;
+  margin-left: 20px;
+  padding-top: 20px; }
+  .realty-info__member-wrap .team-member__info {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center; }
+    @media (max-width: 480px) {
+      .realty-info__member-wrap .team-member__info {
+        -webkit-box-align: start;
+        -webkit-align-items: flex-start;
+            -ms-flex-align: start;
+                align-items: flex-start; } }
+  @media (max-width: 860px) {
+    .realty-info__member-wrap {
+      margin-left: 0px;
+      min-width: initial;
+      margin-top: 30px; } }
+  @media (max-width: 480px) {
+    .realty-info__member-wrap {
+      position: relative;
+      padding-bottom: 45px;
+      width: 288px; }
+      .realty-info__member-wrap .btn-green-border {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%; } }
+  .realty-info__member-wrap .middle-text {
+    color: #515154;
+    font-size: 1rem;
+    margin-top: 8px; }
+
+.realty-info__price {
+  padding: 8px 24px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.3125rem;
+  line-height: 120%;
+  display: inline-block;
+  color: #F6F8F9;
+  background: #159BBA;
+  border-radius: 4px; }
+  @media (max-width: 1024px) {
+    .realty-info__price {
+      font-size: 1.125rem; } }
+
+.realty-info__char-list--block {
+  display: grid;
+  grid-template-columns: repeat(2, -webkit-max-content);
+  grid-template-columns: repeat(2, max-content);
+  grid-gap: 0 36px;
+  padding-bottom: 24px;
+  border-bottom: 1px solid #F6F8F9;
+  margin-bottom: 12px; }
+  @media (max-width: 640px) {
+    .realty-info__char-list--block {
+      grid-template-columns: repeat(1, 1fr); } }
+
+.realty-info__char-list {
+  margin-top: 12px; }
+  .realty-info__char-list li {
+    margin-top: 12px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: .875rem;
+    line-height: 120%;
+    color: #515154; }
+    .realty-info__char-list li span {
+      font-size: 1rem;
+      font-weight: 500; }
+    @media (max-width: 1024px) {
+      .realty-info__char-list li {
+        font-size: .8125rem;
+        margin-top: 8px; }
+        .realty-info__char-list li span {
+          font-size: .875rem; } }
 
 .services-list {
   width: 100%;

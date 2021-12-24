@@ -150,3 +150,88 @@ tabs.forEach( (tab) => {
         
     })
 })
+
+
+
+
+
+var objGallery = new Swiper('.object-gallery', {
+    speed: 1000,
+    centeredSlides: true,
+    
+    autoHeight: false,
+    // Optional parameters
+    direction: 'horizontal',
+    loop: true,
+    // delay between transitions in ms
+    
+    
+    
+    
+    
+    
+    
+
+    effect: 'slide',
+    // Distance between slides in px.
+    
+    //
+    
+    //
+    
+    //
+    slidesOffsetBefore: 0,
+    //
+    grabCursor: true,
+
+    breakpoints: {
+       
+        320: {
+            loopedSlides: 3,
+            slidesPerView: 1.2,
+            spaceBetween: 8,
+          },
+        1024: {
+            loopedSlides: 5,
+            slidesPerView: 1.501,
+            spaceBetween: 12,
+        },
+    }
+    
+});
+
+
+var smallGallery = new Swiper('.small-obj-gallery', {
+    speed: 1000,
+    centeredSlides: true,
+    spaceBetween: 12,
+    autoHeight: false,
+    // Optional parameters
+    direction: 'horizontal',
+    loop: true,
+    // delay between transitions in ms
+    
+    slideToClickedSlide: true,
+    navigation: {
+        prevEl: '.prev-obj-slide',
+        nextEl: '.next-obj-slide'
+      },
+
+    breakpoints: {
+       
+        320: {
+            slidesPerView: 3,
+            spaceBetween: 12
+          },
+        1024: {
+            slidesPerView: 5,
+            spaceBetween: 12
+        },    
+            
+        
+    }
+});
+
+
+objGallery.controller.control = smallGallery;
+smallGallery.controller.control = objGallery;

@@ -371,11 +371,33 @@
     }
 }
 
-.realty-page-s{
+.section.realty-page-s{
     position: relative;
 
+    margin-top: -40px;
 
+    padding-top: 40px;
+
+
+    @media (max-width: 1024px){
+        margin-top: 0px;
+    }
     
+
+    .section__inner{
+        background-color: #fff;
+        border-radius:  8px;
+        padding: 24px;
+        
+        
+        border: 1px solid #F6F8F9;
+        box-sizing: border-box;
+        border-radius: 8px;
+
+        @media (max-width: 768px){
+            padding: 16px 8px;
+        }
+    }
 }
 
 .realty-page-banner{
@@ -391,4 +413,160 @@
     background-position: center;
     z-index: -1;
     
+
+    @media (max-width: 768px){
+        height: 220px;
+    }
+}
+
+.object-gallery{
+    overflow: hidden;
+}
+.small-obj-gallery--wrap{
+    display: flex;
+    justify-content: center;
+    margin-top: 16px;
+    padding-bottom: 24px;
+
+    border-bottom: 1px solid #F6F8F9;
+
+    @media (max-width: 768px){
+        align-items: center;
+
+        padding-bottom: 0px;
+    }
+}
+.small-obj-gallery{
+    overflow: hidden;
+    max-width: 1020px;
+}
+.realty-info{
+    display: flex;
+
+    padding-top: 24px;
+
+    @media (max-width: 860px){
+        flex-direction: column;
+    }
+}
+.realty-info__text-block{
+    flex-grow: 1;
+
+    .breadcrumbs{
+        margin: 8px 0 12px;
+    }
+}
+.realty-title{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 2.25rem;
+    line-height: 125%;
+    color: #29292C;
+
+    @media (max-width: 1024px){
+        font-size: 1.5rem;
+    }
+}
+
+
+
+
+.realty-info__member-wrap{
+    max-width: 310px;
+    min-width: 310px;
+    width: 310px;
+    margin-left: 20px;
+    padding-top: 20px;
+    .team-member__info{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        @media (max-width: 480px){
+            align-items: flex-start;
+        }
+    }
+    @media (max-width: 860px){
+        margin-left: 0px;
+        min-width: initial;
+        margin-top: 30px;
+    }
+
+    @media (max-width: 480px){
+        position: relative;
+        padding-bottom: 45px;
+        width: 288px;
+        .btn-green-border{
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 100% ;
+        }
+    }
+
+    .middle-text{
+        color: #515154;;
+        font-size: 1rem;
+        margin-top: 8px;
+    }
+}
+
+.realty-info__price{
+    padding: 8px 24px;
+    
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.3125rem;
+    line-height: 120%;
+    display: inline-block;
+
+    color: #F6F8F9;
+    background: #159BBA;
+    border-radius: 4px;
+    @media (max-width: 1024px){
+        font-size: 1.125rem;
+    }
+}
+
+
+.realty-info__char-list--block{
+    display: grid;
+    grid-template-columns: repeat(2, max-content);
+    grid-gap: 0 36px;
+
+    padding-bottom: 24px;
+    border-bottom: 1px solid #F6F8F9;
+    margin-bottom: 12px;
+
+    @media (max-width: 640px){
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+.realty-info__char-list{
+    margin-top: 12px;
+    li{
+        margin-top: 12px;
+    
+        font-style: normal;
+        font-weight: normal;
+        font-size: .875rem;
+        line-height: 120%;
+        color: #515154;
+
+
+        span{
+            font-size: 1rem;
+            font-weight: 500;
+        }
+        @media (max-width: 1024px){
+            font-size: .8125rem;
+            margin-top: 8px;
+            span{
+                font-size: .875rem;
+            }
+            
+        }
+
+    }
 }

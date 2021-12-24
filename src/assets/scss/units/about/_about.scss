@@ -121,9 +121,7 @@
         text-align: center;
         
     }
-    button{
-        margin-top: 14px;
-    }
+    
 
     @media (max-width: 480px){
         margin-top: 0;
@@ -132,6 +130,32 @@
         }
     }
 }
+
+.team-member__phones-block{
+    margin: 24px 0;
+    display: flex;
+    flex-direction: column;
+    a{
+        
+        font-style: normal;
+        font-weight: 500;
+        font-size: 1.125rem;
+        line-height: 120%;
+
+        /* or 22px */
+
+        color: #000000;
+
+        @media (max-width: 1024px){
+            font-size: 1rem;
+            
+        }
+    }
+    @media (max-width: 1024px){
+        margin: 20px 0;
+    }
+}
+
 
 .team-member__text-line{
     text-align: center;
