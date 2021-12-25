@@ -22,6 +22,7 @@
 
 @import 'units/realty/_realty.scss';
 
+@import 'units/index/_index.scss';
 
 @import 'units/services/_services.scss';
 
@@ -276,7 +277,26 @@ main{
 		padding: 0 4px;
 	}
 }
+.text-marker{
+	background-color: #5BD1DD;
+	padding: 0 4px;
+}
 
+.subtitle{
+	font-style: normal;
+	font-weight: 500;
+	font-size: 1.3125rem;
+	line-height: 125%;
+
+	/* or 26px */
+
+	/* Black80 */
+	color: #515154;
+
+	@media (max-width: 1024px){
+		font-size: 1.125rem;
+	}
+}
 
 .no_photo{
 	border: 1px dashed silver;
@@ -334,7 +354,9 @@ main{
 		color: #159BBA;
 	}
 }
-
+.green-text{
+	color: #159BBA;
+}
 
 .middle-title{
 	font-weight: bold;
@@ -344,7 +366,7 @@ main{
 
 	@media (max-width: 1024px){
 		font-weight: bold;
-		font-size: 1.3125rem;
+		font-size: 1.5rem;
 		line-height: 125%;
 		color: #515154;
 	}

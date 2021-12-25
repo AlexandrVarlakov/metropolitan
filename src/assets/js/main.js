@@ -235,3 +235,46 @@ var smallGallery = new Swiper('.small-obj-gallery', {
 
 objGallery.controller.control = smallGallery;
 smallGallery.controller.control = objGallery;
+
+
+
+
+var swiperReviews = new Swiper('.swiper-reviews', {
+    
+    
+    speed: 1000,
+    navigation: {
+        prevEl: '.prev-review-slide',
+        nextEl: '.next-review-slide'
+      },
+    breakpoints: {
+        320: {
+        slidesPerView: 1,
+        spaceBetween: 0
+        },
+        680: {
+            slidesPerView: 2,
+            spaceBetween: 20
+            },
+        1025: {
+            slidesPerView: 3,
+            spaceBetween: 75
+        },    
+    }
+    
+});
+
+let swiperSells =  new Swiper('.swiper-sells', {
+    speed: 1000,
+    navigation: {
+        prevEl: '.prev-sells-slide',
+        nextEl: '.next-sells-slide'
+      },
+    breakpoints: {
+        1025: {
+            slidesPerView: 2,
+            spaceBetween: 20
+        }
+    }
+
+});
