@@ -13,15 +13,15 @@ $checkbox-opacity: .5;
 $checkbox-transition: 200ms;
 
 /*Radio - vars:*/
-$radiosizes: 20px;
-$radio-border-color: #666;
+$radiosizes: 24px;
+$radio-border-color: #515154;
 $radio-round-sizes: 12px;
-$radio-round-color: #18bd41;
+$radio-round-color: #38B9CE;
 $radio-img-sizes: 12px;
 $radio-img-mark: url('../img/MyEasyLibrary/easyRadioCheck/checkbox-arrow.svg');
-$radio-fs: 16px;
-$radio-color: #222;
-$radio-ml: 5px;
+$radio-fs: 18px;
+$radio-color: #515154;
+$radio-ml: 8px;
 $radio-opacity: .5;    
 $radio-transition: 200ms;
 
@@ -115,6 +115,11 @@ $radio-transition: 200ms;
 .easyRadio{
     display: flex;
     cursor: pointer;
+
+
+    &:not(:first-of-type){
+        margin-top: 12px;
+    }
 }
 
 .easyRadio__hidden-radio{
@@ -132,7 +137,7 @@ $radio-transition: 200ms;
     height: $radiosizes;
     min-width: $radiosizes;
     min-height: $radiosizes;
-    border: 2px solid rgba($color: $radio-border-color, $alpha: .5);
+    border: 3px solid rgba($color: $radio-border-color, $alpha: .5);
     transition: $radio-transition;
     border-radius: 50%;
     position: relative;
@@ -173,6 +178,7 @@ $radio-transition: 200ms;
 
 .easyRadio__text{
     font-size: $radio-fs;
+    font-weight: 600;
     color: $radio-color;
     margin-left: $radio-ml;
     opacity: $radio-opacity;
@@ -191,6 +197,6 @@ $radio-transition: 200ms;
 }
 
 .easyRadio__hidden-radio:checked + .easyRadio__visible-radio{
-    border: 2px solid rgba($color: $radio-border-color, $alpha: 1);
+    border: 3px solid rgba($color: $radio-border-color, $alpha: 1);
 }
 /***************END: easyRadio****************/

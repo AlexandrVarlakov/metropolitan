@@ -12,9 +12,16 @@ inputs.forEach( (input) => {
     input.addEventListener('focus', function(){
         let outerWrap = input.closest('.input-outer-wrap');
 
-        outerWrap.removeAttribute('data-err');
+        if ( outerWrap ) {
+            outerWrap.removeAttribute('data-err');
 
-        outerWrap.querySelector('.err-msg').innerHTML = '';
+            if ( outerWrap.querySelector('.err-msg') ){
+                outerWrap.querySelector('.err-msg').innerHTML = '';
+            }
+            
+        }
+
+        
     })
 } )
 

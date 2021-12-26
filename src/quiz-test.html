@@ -1,0 +1,448 @@
+@@include('part-templates/header.html')
+<main>
+    <section class="section quiz-test">
+
+        
+
+
+        <div class="section__inner">
+            <div class="quiz-w">
+                <div class="quiz-close">
+                    <div></div>
+                    <div></div>
+                </div>
+
+                
+
+
+                <div class="quiz-w__inner">
+                    <div class="quiz-progress">
+                        <div class="quiz-progress__finished"></div>
+                        <div class="quiz-progress__step"></div>
+                    </div>
+                    <div class="quiz-sildes-line">
+
+                    
+                        <div class="quiz-w__screen quiz-w__f-screen">
+
+                            
+                            <h2 class="quiz-title">Тип недвижимости</h2>
+                            
+
+                            
+                            <div class="quiz-inp-block">
+                                <label for="type-1" class="easyRadio">
+                                    <input type="radio" name="type" id="type-1" value="0" class="easyRadio__hidden-radio" checked="checked">
+                                    <div class="easyRadio__visible-radio easyRadio__round"></div>
+                                    <p class="easyRadio__text">Квартиры</p>
+                                </label>
+
+                                <label for="type-2" class="easyRadio">
+                                    <input type="radio" name="type" id="type-2" value="1" class="easyRadio__hidden-radio">
+                                    <div class="easyRadio__visible-radio easyRadio__round"></div>
+                                    <p class="easyRadio__text">Загородная</p>
+                                </label>
+
+                                <label for="type-3" class="easyRadio">
+                                    <input type="radio" name="type" id="type-3" value="2" class="easyRadio__hidden-radio">
+                                    <div class="easyRadio__visible-radio easyRadio__round"></div>
+                                    <p class="easyRadio__text">Коммерческая</p>
+                                </label>
+
+                                <div class="quiz-nav-block">
+                                    <button class="transparent-btn prev-quiz-slide">Назад</button>
+                                    <button class="green-btn next-quiz-slide">Далее</button>
+                                </div>
+                            </div>
+
+                            <div class="quiz-img-block">
+                                <img src="assets/img/quiz/first.svg" alt="">
+                            </div>
+                            
+                            
+                        </div>
+
+
+
+
+
+                        <div class="quiz-w__screen active quiz-w__flat " >
+                            <h2 class="quiz-title">Сколько комнат?</h2>
+                            <div class="quiz-inp-block">
+                                <label for="rooms-1" class="easyRadio">
+                                    <input type="radio" name="rooms" id="rooms-1" value="1" class="easyRadio__hidden-radio" checked="checked">
+                                    <div class="easyRadio__visible-radio easyRadio__round"></div>
+                                    <p class="easyRadio__text">1</p>
+                                </label>
+
+                                <label for="rooms-2" class="easyRadio">
+                                    <input type="radio" name="rooms" id="rooms-2" value="2" class="easyRadio__hidden-radio">
+                                    <div class="easyRadio__visible-radio easyRadio__round"></div>
+                                    <p class="easyRadio__text">2</p>
+                                </label>
+
+                                <label for="rooms-3" class="easyRadio">
+                                    <input type="radio" name="rooms" id="rooms-3" value="3" class="easyRadio__hidden-radio">
+                                    <div class="easyRadio__visible-radio easyRadio__round"></div>
+                                    <p class="easyRadio__text">3</p>
+                                </label>
+                                <label for="rooms-4" class="easyRadio">
+                                    <input type="radio" name="rooms" id="rooms-4" value="4 и более" class="easyRadio__hidden-radio">
+                                    <div class="easyRadio__visible-radio easyRadio__round"></div>
+                                    <p class="easyRadio__text">4 и более</p>
+                                </label>
+                                <div class="quiz-nav-block">
+                                    <button class="transparent-btn prev-quiz-slide">Назад</button>
+                                    <button class="green-btn next-quiz-slide">Далее</button>
+                                </div>
+                            </div>
+
+                            <div class="quiz-img-block">
+                                <img src="assets/img/quiz/1-2.svg" alt="">
+                            </div>
+                        </div>
+                        <div class="quiz-w__screen active quiz-w__flat">
+                            <h2 class="quiz-title">Метраж квартиры</h2>
+                            <div class="quiz-inp-block">
+                                <label for="flat-square-1" class="easyRadio">
+                                    <input type="radio" name="flat-square" id="flat-square-1" value="30-43 м2" class="easyRadio__hidden-radio" checked="checked">
+                                    <div class="easyRadio__visible-radio easyRadio__round"></div>
+                                    <p class="easyRadio__text">30-43 м<sup>2</sup></p>
+                                </label>
+
+                                <label for="flat-square-2" class="easyRadio">
+                                    <input type="radio" name="flat-square" id="flat-square-2" value="43-55 м2" class="easyRadio__hidden-radio">
+                                    <div class="easyRadio__visible-radio easyRadio__round"></div>
+                                    <p class="easyRadio__text">43-55 м<sup>2</sup></p>
+                                </label>
+
+                                <label for="flat-square-3" class="easyRadio">
+                                    <input type="radio" name="flat-square" id="flat-square-3" value="55-70 м2" class="easyRadio__hidden-radio">
+                                    <div class="easyRadio__visible-radio easyRadio__round"></div>
+                                    <p class="easyRadio__text">55-70 м<sup>2</sup></p>
+                                </label>
+                                <label for="flat-square-4" class="easyRadio">
+                                    <input type="radio" name="flat-square" id="flat-square-4" value="70-90 м2" class="easyRadio__hidden-radio">
+                                    <div class="easyRadio__visible-radio easyRadio__round"></div>
+                                    <p class="easyRadio__text">70-90 м<sup>2</sup></p>
+                                </label>
+                                <div class="quiz-nav-block">
+                                    <button class="transparent-btn prev-quiz-slide">Назад</button>
+                                    <button class="green-btn next-quiz-slide">Далее</button>
+                                </div>
+                            </div>
+
+                            <div class="quiz-img-block">
+                                <img src="assets/img/quiz/1-3.svg" alt="">
+                            </div>
+                        </div>
+                        <div class="quiz-w__screen active quiz-w__flat" >
+                            <h2 class="quiz-title">Год постройки</h2>
+                            <div class="quiz-inp-block">
+                                <label for="flat-year-1" class="easyRadio">
+                                    <input type="radio" name="flat-year" id="flat-year-1" value="1961-1970 года" class="easyRadio__hidden-radio" checked="checked">
+                                    <div class="easyRadio__visible-radio easyRadio__round"></div>
+                                    <p class="easyRadio__text">1961-1970 года</p>
+                                </label>
+
+                                <label for="flat-year-2" class="easyRadio">
+                                    <input type="radio" name="flat-year" id="flat-year-2" value="1971-1999 года" class="easyRadio__hidden-radio">
+                                    <div class="easyRadio__visible-radio easyRadio__round"></div>
+                                    <p class="easyRadio__text">1971-1999 года</p>
+                                </label>
+
+                                <label for="flat-year-3" class="easyRadio">
+                                    <input type="radio" name="flat-year" id="flat-year-3" value="2000-2010 года" class="easyRadio__hidden-radio">
+                                    <div class="easyRadio__visible-radio easyRadio__round"></div>
+                                    <p class="easyRadio__text">2000-2010 года</p>
+                                </label>
+                                <label for="flat-year-4" class="easyRadio">
+                                    <input type="radio" name="flat-year" id="flat-year-4" value="После 2010 года" class="easyRadio__hidden-radio">
+                                    <div class="easyRadio__visible-radio easyRadio__round"></div>
+                                    <p class="easyRadio__text">После 2010 года</p>
+                                </label>
+                                <div class="quiz-nav-block">
+                                    <button class="transparent-btn prev-quiz-slide">Назад</button>
+                                    <button class="green-btn next-quiz-slide">Далее</button>
+                                </div>
+                            </div>
+
+                            <div class="quiz-img-block">
+                                <img src="assets/img/quiz/1-4.svg" alt="">
+                            </div>
+                        </div>
+                        <div class="quiz-w__screen active quiz-w__flat">
+                            <h2 class="quiz-title">Наличие ремонта</h2>
+                            <div class="quiz-inp-block">
+                                <label for="flat-has-repair-1" class="easyRadio">
+                                    <input type="radio" name="flat-has-repair" id="flat-has-repair-1" value="Без отделки" class="easyRadio__hidden-radio" checked="checked">
+                                    <div class="easyRadio__visible-radio easyRadio__round"></div>
+                                    <p class="easyRadio__text">Без отделки</p>
+                                </label>
+
+                                <label for="flat-has-repair-2" class="easyRadio">
+                                    <input type="radio" name="flat-has-repair" id="flat-has-repair-2" value="С ремонтом" class="easyRadio__hidden-radio">
+                                    <div class="easyRadio__visible-radio easyRadio__round"></div>
+                                    <p class="easyRadio__text">С ремонтом</p>
+                                </label>
+
+                                <label for="flat-has-repair-3" class="easyRadio">
+                                    <input type="radio" name="flat-has-repair" id="flat-has-repair-3" value="Дизайнерский ремонт" class="easyRadio__hidden-radio">
+                                    <div class="easyRadio__visible-radio easyRadio__round"></div>
+                                    <p class="easyRadio__text">Дизайнерский ремонт</p>
+                                </label>
+                                
+                                <div class="quiz-nav-block">
+                                    <button class="transparent-btn prev-quiz-slide">Назад</button>
+                                    <button class="green-btn next-quiz-slide">Далее</button>
+                                </div>
+                            </div>
+
+                            <div class="quiz-img-block">
+                                <img src="assets/img/quiz/1-5.svg" alt="">
+                            </div>
+                        </div>
+
+
+
+                        <div class="quiz-w__screen quiz-w__house">
+                            <h2 class="quiz-title">Вид недвижимости</h2>
+                            <div class="quiz-inp-block">
+                                <label for="house-type-1" class="easyRadio">
+                                    <input type="radio" name="house-type" id="house-type-1" value="Дача" class="easyRadio__hidden-radio" checked="checked">
+                                    <div class="easyRadio__visible-radio easyRadio__round"></div>
+                                    <p class="easyRadio__text">Дача</p>
+                                </label>
+
+                                <label for="house-type-2" class="easyRadio">
+                                    <input type="radio" name="house-type" id="house-type-2" value="Участок" class="easyRadio__hidden-radio">
+                                    <div class="easyRadio__visible-radio easyRadio__round"></div>
+                                    <p class="easyRadio__text">Участок</p>
+                                </label>
+
+                                <label for="house-type-3" class="easyRadio">
+                                    <input type="radio" name="house-type" id="house-type-3" value="Дом" class="easyRadio__hidden-radio">
+                                    <div class="easyRadio__visible-radio easyRadio__round"></div>
+                                    <p class="easyRadio__text">Дом</p>
+                                </label>
+                                <label for="house-type-4" class="easyRadio">
+                                    <input type="radio" name="house-type" id="house-type-4" value="Коттедж" class="easyRadio__hidden-radio">
+                                    <div class="easyRadio__visible-radio easyRadio__round"></div>
+                                    <p class="easyRadio__text">Коттедж</p>
+                                </label>
+                                <div class="quiz-nav-block">
+                                    <button class="transparent-btn prev-quiz-slide">Назад</button>
+                                    <button class="green-btn next-quiz-slide">Далее</button>
+                                </div>
+                            </div>
+
+                            <div class="quiz-img-block">
+                                <img src="assets/img/quiz/2-2.svg" alt="">
+                            </div>
+                        </div>
+
+                        <div class="quiz-w__screen quiz-w__house">
+
+                            <h2 class="quiz-title">Название <br />населённого <br />пункта</h2>
+                            <div class="quiz-inp-block">
+                                <div class="input-outer-wrap s-quiz__h-l-outer-wrap">
+                                
+                                    <div class="input-wrap ">
+                                        <input type="text" name="house-location" id="house-location" placeholder="Укажите название" class="input-text easyForm__input">
+                                    </div>
+                                    
+                                </div>
+                                <div class="quiz-nav-block">
+                                    <button class="transparent-btn prev-quiz-slide">Назад</button>
+                                    <button class="green-btn next-quiz-slide">Далее</button>
+                                </div>
+                            </div>
+
+                            <div class="quiz-img-block">
+                                <img src="assets/img/quiz/2-3.svg" alt="">
+                            </div>
+                            
+                        </div>
+                        <div class="quiz-w__screen quiz-w__house">
+                            <h2 class="quiz-title">Площадь участка</h2>
+                            <div class="quiz-inp-block">
+                                <label for="house-g-s-1" class="easyRadio">
+                                    <input type="radio" name="house-g-s" id="house-g-s-1" value="500-700 м2" class="easyRadio__hidden-radio" checked="checked">
+                                    <div class="easyRadio__visible-radio easyRadio__round"></div>
+                                    <p class="easyRadio__text">500-700 м<sup>2</sup></p>
+                                </label>
+
+                                <label for="house-g-s-2" class="easyRadio">
+                                    <input type="radio" name="house-g-s" id="house-g-s-2" value="700-1300 м2" class="easyRadio__hidden-radio">
+                                    <div class="easyRadio__visible-radio easyRadio__round"></div>
+                                    <p class="easyRadio__text">700-1300 м<sup>2</sup></p>
+                                </label>
+
+                                <label for="house-g-s-3" class="easyRadio">
+                                    <input type="radio" name="house-g-s" id="house-g-s-3" value="1300-1700 м2" class="easyRadio__hidden-radio">
+                                    <div class="easyRadio__visible-radio easyRadio__round"></div>
+                                    <p class="easyRadio__text">1300-1700 м<sup>2</sup></p>
+                                </label>
+                                <label for="house-g-s-4" class="easyRadio">
+                                    <input type="radio" name="house-g-s" id="house-g-s-4" value="1700 и более м2" class="easyRadio__hidden-radio">
+                                    <div class="easyRadio__visible-radio easyRadio__round"></div>
+                                    <p class="easyRadio__text">1700 и более м<sup>2</sup></p>
+                                </label>
+                                <div class="quiz-nav-block">
+                                    <button class="transparent-btn prev-quiz-slide">Назад</button>
+                                    <button class="green-btn next-quiz-slide">Далее</button>
+                                </div>
+                            </div>
+
+                            <div class="quiz-img-block">
+                                <img src="assets/img/quiz/1-3.svg" alt="">
+                            </div>
+                        </div>
+                        <div class="quiz-w__screen quiz-w__comm">
+                            <h2 class="quiz-title">Вы хотите...</h2>
+                            <div class="quiz-inp-block">
+                                <label for="comm-target-1" class="easyRadio">
+                                    <input type="radio" name="comm-target" id="comm-target-1" value="Сдать помещение" class="easyRadio__hidden-radio" checked="checked">
+                                    <div class="easyRadio__visible-radio easyRadio__round"></div>
+                                    <p class="easyRadio__text">Сдать помещение</p>
+                                </label>
+
+                                <label for="comm-target-2" class="easyRadio">
+                                    <input type="radio" name="comm-target" id="comm-target-2" value="Продать помещение" class="easyRadio__hidden-radio">
+                                    <div class="easyRadio__visible-radio easyRadio__round"></div>
+                                    <p class="easyRadio__text">Продать помещение</p>
+                                </label>
+
+                                
+                                <div class="quiz-nav-block">
+                                    <button class="transparent-btn prev-quiz-slide">Назад</button>
+                                    <button class="green-btn next-quiz-slide">Далее</button>
+                                </div>
+                            </div>
+
+                            <div class="quiz-img-block">
+                                <img src="assets/img/quiz/3-2.svg" alt="">
+                            </div>
+                        </div>
+                        <div class="quiz-w__screen quiz-w__comm">
+                            <h2 class="quiz-title">Тип помещения</h2>
+                            <div class="quiz-inp-block">
+                                <label for="comm-type-1" class="easyRadio">
+                                    <input type="radio" name="comm-type" id="comm-type-1" value="Офисное" class="easyRadio__hidden-radio" checked="checked">
+                                    <div class="easyRadio__visible-radio easyRadio__round"></div>
+                                    <p class="easyRadio__text">Офисное</p>
+                                </label>
+
+                                <label for="comm-type-2" class="easyRadio">
+                                    <input type="radio" name="comm-type" id="comm-type-2" value="Торговое" class="easyRadio__hidden-radio">
+                                    <div class="easyRadio__visible-radio easyRadio__round"></div>
+                                    <p class="easyRadio__text">Торговое</p>
+                                </label>
+
+                                
+                                <label for="comm-type-3" class="easyRadio">
+                                    <input type="radio" name="comm-type" id="comm-type-3" value="Производственно-складское " class="easyRadio__hidden-radio">
+                                    <div class="easyRadio__visible-radio easyRadio__round"></div>
+                                    <p class="easyRadio__text">Производственно-<br />
+                                        складское </p>
+                                </label>
+
+                                <div class="quiz-nav-block">
+                                    <button class="transparent-btn prev-quiz-slide">Назад</button>
+                                    <button class="green-btn next-quiz-slide">Далее</button>
+                                </div>
+                            </div>
+
+                            <div class="quiz-img-block">
+                                <img src="assets/img/quiz/3-3.svg" alt="">
+                            </div>
+                        </div>
+                        <div class="quiz-w__screen quiz-w__comm">
+                            <h2 class="quiz-title">Площадь помещения</h2>
+                            <div class="quiz-inp-block">
+                                <label for="comm-square-1" class="easyRadio">
+                                    <input type="radio" name="comm-square" id="comm-square-1" value="0-50 м2" class="easyRadio__hidden-radio" checked="checked">
+                                    <div class="easyRadio__visible-radio easyRadio__round"></div>
+                                    <p class="easyRadio__text">0-50 м<sup>2</sup></p>
+                                </label>
+
+                                <label for="comm-square-2" class="easyRadio">
+                                    <input type="radio" name="comm-square" id="comm-square-2" value="50-200 м2" class="easyRadio__hidden-radio">
+                                    <div class="easyRadio__visible-radio easyRadio__round"></div>
+                                    <p class="easyRadio__text">50-200 м<sup>2</sup></p>
+                                </label>
+
+                                
+                                <label for="comm-square-3" class="easyRadio">
+                                    <input type="radio" name="comm-square" id="comm-square-3" value="200-500 м2" class="easyRadio__hidden-radio">
+                                    <div class="easyRadio__visible-radio easyRadio__round"></div>
+                                    <p class="easyRadio__text">200-500 м<sup>2</sup></p>
+                                </label>
+                                <label for="comm-square-4" class="easyRadio">
+                                    <input type="radio" name="comm-square" id="comm-square-4" value="500 и более м2" class="easyRadio__hidden-radio">
+                                    <div class="easyRadio__visible-radio easyRadio__round"></div>
+                                    <p class="easyRadio__text">500 и более м<sup>2</sup></p>
+                                </label>
+                                <div class="quiz-nav-block">
+                                    <button class="transparent-btn prev-quiz-slide">Назад</button>
+                                    <button class="green-btn next-quiz-slide">Далее</button>
+                                </div>
+                            </div>
+
+                            <div class="quiz-img-block">
+                                <img src="assets/img/quiz/1-3.svg" alt="">
+                            </div>
+                        </div>
+                        <div class="quiz-w__screen quiz-w__c-screen">
+
+                            
+                            <h2 class="quiz-title">Контактные данные</h2>
+                            
+
+                            
+                            <div class="quiz-inp-block">
+                                
+                                <form action="/send-quiz.php" class="s-quiz__form">
+                                    
+                                    <div class="input-outer-wrap s-quiz__name-outer-wrap">
+                                
+                                        <div class="input-wrap ">
+                                            <input type="text" name="name" id="name" placeholder="Ваше имя" class="input-text easyForm__input" required="required">
+                                        </div>
+                                        <p class="err-msg"></p>
+                                    </div>
+                                    
+                                    <div class="input-outer-wrap s-quiz__phone-outer-wrap">
+                                    
+                                        <div class="input-wrap ">
+                                            <input type="text" name="phone" id="phone" placeholder="+375 (   ) ... - .. - .." class="input-text easyForm__input" required="required" data-type="phone">
+                                        </div>
+                                        <p class="err-msg"></p>
+                                    </div>
+                    
+                                    <div class="s-quiz__btn-wrap">
+                                        <button class="green-btn send-quiz-form">Оставить заявку</button>
+                                    </div>
+                    
+                                    
+                                </form>
+                                                                
+                            </div>
+
+                            <div class="quiz-img-block">
+                                <img src="assets/img/quiz/contact.svg" alt="">
+                            </div>
+                            
+                            
+                        </div>
+
+                        <div class="quiz-w__screen quiz-w__th-screen">
+                            <h2 class="quiz-title">Спасибо ваша заявка принята!</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>   
+@@include('part-templates/footer.html')    
