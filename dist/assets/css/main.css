@@ -71,8 +71,11 @@
   -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
+  position: fixed;
   padding: 5px 60px;
-  border-bottom: 1px solid #DDE7EC; }
+  border-bottom: 1px solid #DDE7EC;
+  background-color: #FCFDFD;
+  z-index: 50; }
   @media (max-width: 1366px) {
     .header__top {
       padding: 7px 40px; } }
@@ -117,7 +120,8 @@
   -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding: 0 60px; }
+  padding: 0 60px;
+  margin-top: 110px; }
   @media (max-width: 1200px) {
     .header__nav {
       display: none; } }
@@ -410,7 +414,7 @@
   background-color: #159BBA; }
 
 .mob-nav {
-  position: absolute;
+  position: fixed;
   width: 100%;
   -webkit-transform: translateY(-200%);
       -ms-transform: translateY(-200%);
@@ -420,6 +424,7 @@
   -o-transition: 500ms;
   transition: 500ms;
   z-index: 888;
+  bottom: 0;
   overflow: auto; }
   @media (min-width: 1201px) {
     .mob-nav {
@@ -4089,9 +4094,13 @@ main {
       -ms-flex-positive: 1;
           flex-grow: 1;
   padding: 80px 0 100px; }
+  @media (max-width: 1200px) {
+    main {
+      margin-top: 73px; } }
   @media (max-width: 1024px) {
     main {
-      padding: 40px 0; } }
+      padding: 40px 0;
+      margin-top: 100px; } }
 
 .modal-form, .cv-success {
   width: 100%;

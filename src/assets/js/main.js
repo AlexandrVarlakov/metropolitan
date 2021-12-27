@@ -18,7 +18,7 @@ hamburger.addEventListener('click', function(){
     if ( hState === '0') {
         this.setAttribute('data-state', '1');
 
-        let headerHeight = document.querySelector('.header').offsetHeight;
+        let headerHeight = document.querySelector('.header__top').offsetHeight;
 
         let footerHeight = document.querySelector('.footer').offsetHeight;
 
