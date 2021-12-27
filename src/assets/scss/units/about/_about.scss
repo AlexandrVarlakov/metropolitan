@@ -42,11 +42,15 @@
 }
 .team{
 
-    margin: 40px 0 0;
+    margin: 55px 0 0;
+
+    @media (max-width: 1024px){
+        margin: 45px 0 0;
+    }
 
 }
 .team-list{
-    padding: 55px 0 0;
+    padding: 40px 0 0;
     display: grid;
 
     grid-template-columns: repeat(4, 1fr);
@@ -70,6 +74,18 @@
 .team-list__cell{
     padding: 16px 0 24px;
 
+
+    border: 1px solid #F6F8F9;
+
+    border-radius: 8px;
+
+    .btn-green-border{
+        margin-top: 16px;
+
+        @media (max-width: 480px){
+            margin-top: 10px;
+        }
+    }
     @media (max-width:480px){
         padding: 16px 16px 24px;
     }

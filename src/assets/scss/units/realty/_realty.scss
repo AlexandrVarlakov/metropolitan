@@ -383,6 +383,9 @@
         margin-top: 0px;
     }
     
+    @media (max-width: 480px){
+        flex-direction: column;
+    }
 
     .section__inner{
         background-color: #fff;
@@ -444,7 +447,7 @@
     display: flex;
 
     padding-top: 24px;
-
+    align-items: flex-start;
     @media (max-width: 860px){
         flex-direction: column;
     }
@@ -477,6 +480,10 @@
     width: 310px;
     margin-left: 20px;
     padding-top: 20px;
+    padding-bottom: 20px;
+    border: 1px solid #F6F8F9;
+    box-sizing: border-box;
+    border-radius: 8px;
     .team-member__info{
         display: flex;
         flex-direction: column;
@@ -494,13 +501,16 @@
 
     @media (max-width: 480px){
         position: relative;
-        padding-bottom: 45px;
-        width: 288px;
+        padding: 16px 16px 45px;
+        width: 100%;
+        max-width: initial;
+        margin-top: 16px;
         .btn-green-border{
             position: absolute;
-            left: 0;
+            left: 16px;
+            
             bottom: 0;
-            width: 100% ;
+           width: calc(100% - 32px);
         }
     }
 

@@ -226,7 +226,7 @@ $err-input-border-color: #a23d3d;
     display: flex;
     flex-wrap: wrap;
     align-items: flex-start;
-    justify-content: space-between;
+    justify-content: flex-start;
 
 
     margin-top: 24px;
@@ -242,15 +242,15 @@ $err-input-border-color: #a23d3d;
 
 .CVForm__name-outer-wrap{
     max-width: 160px;
+
+    margin-right: 24px;
 }
 
 .CVForm__phone-outer-wrap{
     max-width: 203px;
-    margin: 0 10px;
-
-    @media (max-width: 1280px){
-        margin: 0;
-    }
+    margin-right: 24px;
+    
+    
 }
 
 .cv-load-btn{
@@ -329,6 +329,9 @@ $err-input-border-color: #a23d3d;
     height: 155px;
     padding: 1rem 2rem;
     outline: none;
+
+    margin-right: 40px;
+
     &::placeholder{
         color: #6D6D71;;
         opacity: 1;
@@ -351,14 +354,24 @@ $err-input-border-color: #a23d3d;
         min-width: 100%;
     }
 }
+.CVForm-bottmom-line{
+    display: flex;
+    align-items: flex-start;
 
+    @media (max-width:1300px){
+        flex-direction: column;
+        min-width: 100%;
+    }
+}
 .send-cv{
     margin-top: 10px;
-    
-    @media (max-width: 1280px){
+    min-width: 247px;
+    transform: translateX(24px);
+    @media (max-width: 1300px){
         width: 100%;
         max-width: 387px;
         order: 5;
+        transform: translateX(0px);
     }
 
     @media (max-width: 560px){

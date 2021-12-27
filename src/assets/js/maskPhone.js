@@ -23,8 +23,12 @@ function maskPhone(selector, masked = '+375 (__) ___-__-__') {
 		if (!reg.test(this.value) || this.value.length < 5 || keyCode > 47 && keyCode < 58) {
 			this.value = newValue;
 		}
-		if (event.type === "blur" && this.value.length < 5) {
+		
+		if (event.type === "blur" && this.value.length < 7) {
 			this.value = "";
+			
+		} else{
+			
 		}
 
 	}

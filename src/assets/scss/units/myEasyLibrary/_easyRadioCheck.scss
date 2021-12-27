@@ -120,6 +120,19 @@ $radio-transition: 200ms;
     &:not(:first-of-type){
         margin-top: 12px;
     }
+
+
+    &:hover{
+        .easyRadio__visible-radio{
+            border: 3px solid rgba($color: #6D6D71, $alpha: 1);
+        }
+
+        .easyRadio__text{
+            color: #6D6D71;
+            opacity: 1;
+        }
+        
+    }
 }
 
 .easyRadio__hidden-radio{
@@ -141,6 +154,9 @@ $radio-transition: 200ms;
     transition: $radio-transition;
     border-radius: 50%;
     position: relative;
+
+
+    
 }
 
 .easyRadio__round, .easyRadio__img{

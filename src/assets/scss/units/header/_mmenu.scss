@@ -77,7 +77,7 @@
     &::before{
         content: "";
         position: absolute;
-        bottom: 0px;
+        bottom: -3px;
         left: 50%;
         width: 5px;
         height: 5px;
@@ -100,7 +100,7 @@
 
 
         .mmenu__sub{
-            transform: translateY(100%) scaleY(1);
+            transform: translateY(105%) scaleY(1);
         }
         
     }

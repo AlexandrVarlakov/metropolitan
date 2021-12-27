@@ -302,6 +302,18 @@ main{
 
 .no_photo{
 	border: 1px dashed silver;
+
+	background-color: #F6F8F9;
+	.review__img-inner-block{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		img{
+			max-width: 55px;
+			max-height: 55px;
+			position: static;
+		}
+	}
 }
 
 .text{

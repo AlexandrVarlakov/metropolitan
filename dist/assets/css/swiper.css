@@ -375,6 +375,9 @@
   .small-obj-gallery .swiper-slide .swiper-slide__inner {
     padding-bottom: 66.66%; }
 
+.small-obj-gallery .swiper-slide {
+  border: 3px solid transparent; }
+
 .small-obj-gallery .swiper-slide-active {
   opacity: 1;
   border: 3px solid #86EFFA; }

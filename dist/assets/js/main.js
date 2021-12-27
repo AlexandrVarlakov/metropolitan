@@ -650,5 +650,34 @@ if (callQuizBtns){
     
 }
 
+document.addEventListener("DOMContentLoaded", function(){
+    let specWrap = document.querySelector('.realty-info__member-wrap');
+
+
+    if (specWrap) {
+
+
+        let pageSection = document.querySelector('.realty-page-s');
+        let realtyInfo = document.querySelector('.realty-info');
+
+
+        if (document.documentElement.clientWidth <= 480){
+            pageSection.append(specWrap);
+        }
+
+
+        window.addEventListener('resize', function() {
+            if (document.documentElement.clientWidth <= 480){
+                pageSection.append(specWrap);
+            } else{
+                realtyInfo.append(specWrap);
+            }   
+        }, true);
+    }
+});
+
+
+
+
 
 /*END: QUIZ*/
