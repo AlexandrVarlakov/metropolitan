@@ -151,7 +151,32 @@ tabs.forEach( (tab) => {
     })
 })
 
+//опция бесконечности(зацикливания)
+let sliderLoop = true;
 
+//Получаем слайды большого слайдера
+let ogSlidesQty = document.querySelectorAll('.object-gallery .swiper-slide');
+//Получаем слайды малого слайдера
+let sgSlidesQty = document.querySelectorAll('.small-obj-gallery .swiper-slide');
+
+//Количество слайдов на большом экране в малом слайдере 
+let smallGallerySlidesShow = 5; 
+
+//Количество слайдов на маленьком экране в малом слайдере
+let smallGallerySlidesShow_320 = 3;
+
+
+//Проверяем если слайдов меньше 2, то количество отображаемых слайдов = 1
+if ( sgSlidesQty && sgSlidesQty.length < 2 ){
+    smallGallerySlidesShow = 1; 
+    smallGallerySlidesShow_320 = 1;
+    
+}
+
+//Проверяем если слайдов меньше 2, то количествоотключаем зацикливание
+if ( ogSlidesQty && ogSlidesQty.length < 2 ){
+    sliderLoop = false;
+}
 
 
 
@@ -162,37 +187,25 @@ var objGallery = new Swiper('.object-gallery', {
     autoHeight: false,
     // Optional parameters
     direction: 'horizontal',
-    loop: true,
+    loop: sliderLoop,
     // delay between transitions in ms
-    
-    
-    
-    
-    
-    
-    
 
     effect: 'slide',
     // Distance between slides in px.
     
-    //
-    
-    //
-    
-    //
     slidesOffsetBefore: 0,
-    //
+
     grabCursor: true,
 
     breakpoints: {
        
         320: {
-            loopedSlides: 3,
+            loopedSlides: smallGallerySlidesShow_320,
             slidesPerView: 1.2,
             spaceBetween: 8,
           },
         1024: {
-            loopedSlides: 5,
+            loopedSlides: smallGallerySlidesShow,
             slidesPerView: 1.501,
             spaceBetween: 12,
         },
@@ -206,9 +219,10 @@ var smallGallery = new Swiper('.small-obj-gallery', {
     centeredSlides: true,
     spaceBetween: 12,
     autoHeight: false,
+   
     // Optional parameters
     direction: 'horizontal',
-    loop: true,
+    loop: sliderLoop,
     // delay between transitions in ms
     
     slideToClickedSlide: true,
@@ -220,11 +234,13 @@ var smallGallery = new Swiper('.small-obj-gallery', {
     breakpoints: {
        
         320: {
-            slidesPerView: 3,
+            
+            slidesPerView: smallGallerySlidesShow_320,
             spaceBetween: 12
           },
         1024: {
-            slidesPerView: 5,
+            
+            slidesPerView: smallGallerySlidesShow,
             spaceBetween: 12
         },    
             

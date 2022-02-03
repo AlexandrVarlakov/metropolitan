@@ -371,7 +371,8 @@
   -o-transition: 500ms;
   transition: 500ms;
   opacity: .5;
-  cursor: pointer; }
+  cursor: pointer;
+  max-width: 195px; }
   .small-obj-gallery .swiper-slide .swiper-slide__inner {
     padding-bottom: 66.66%; }
 
